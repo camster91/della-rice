@@ -5,5 +5,5 @@
   {% if section.settings.show_signup %}<div class="della-signup"><h2>Good things, by the grain.</h2>{% form 'customer', id: 'DellaNewsletter' %}<input type="hidden" name="contact[tags]" value="newsletter"><label for="DellaNewsletterEmail">Email address</label><input id="DellaNewsletterEmail" type="email" name="contact[email]" autocomplete="email" required><button class="della-button" type="submit">Sign up</button>{% if form.posted_successfully? %}<p role="status">Thanks for signing up.</p>{% endif %}{{ form.errors | default_errors }}{% endform %}</div>{% endif %}
 </footer>
 {% schema %}
-{"name":"Della footer","settings":[{"type":"text","id":"description","label":"Description","default":"Lovingly grown in Arkansas. Family-owned since 1986."},{"type":"text","id":"email","label":"Contact email","default":"hello@dellarice.com"},{"type":"checkbox","id":"show_signup","label":"Show newsletter signup","default":false}]}
+{"name":"Della footer","settings":[{"type":"text","id":"description","label":"Description","default":"Lovingly grown in Arkansas. Family-owned since 1986."},{"type":"text","id":"email","label":"Contact email","default":"info@dellarice.com"},{"type":"checkbox","id":"show_signup","label":"Show newsletter signup","default":false}]}
 {% endschema %}
