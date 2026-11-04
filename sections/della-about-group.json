@@ -53,8 +53,8 @@
         "anchor": "our-promise",
         "eyebrow": "Our promise to you",
         "heading": "Find the nicest rice for you.",
-        "tone": "yellow",
-        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free &amp; Allergen-Free</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>"
+        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free &amp; Allergen-Free</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>",
+        "tone": "yellow"
       },
       "blocks": {
         "b0": {
