@@ -1377,19 +1377,36 @@
   },
   "verification": {
     "recipe_text_and_link_comparison": "181/181 passed after CDN substitution and HTML normalisation",
-    "source_metadata": "all 181 recipes; product/page write results succeeded, full readback pending",
-    "product_readback": "12 drafts, source prices, descriptions, weights and 34 gallery references ready"
+    "source_metadata": "199/199 imported product/page/article source records read back",
+    "product_readback": "12 drafts, source prices, descriptions, weights and 34 gallery references ready",
+    "theme_check": {
+      "cli": "5.0.1",
+      "errors": 0,
+      "warnings": 9
+    },
+    "responsive_widths": [
+      390,
+      768,
+      1440
+    ]
   },
   "themes": {
     "original_main": "189341139245",
     "target": "189341761837",
     "qa_copy": "189343858989",
-    "target_published": false
+    "target_published": true,
+    "published_role_verified": "MAIN",
+    "previous_theme_role": "UNPUBLISHED"
   },
   "remaining": [
-    "Authenticated WooCommerce exports: unpublished products/variants, SKUs, barcodes, stock, taxes, customers and consent, orders/refunds, reviews, coupons, shipping rules and integrations.",
-    "Policies and duplicate content review.",
-    "Responsive, interaction, accessibility and performance QA in progress.",
-    "PR merge and theme publication pending verification."
-  ]
+    "Authenticated WordPress exports unavailable: admin redirects to login. Reconcile real SKUs/barcodes, hidden variations, stock, tax, shipping, customers/consent, orders/refunds, reviews, discounts and providers.",
+    "Products/recipes remain drafts; six imported pages remain hidden. Review duplicates, product names and policies before publication.",
+    "Full populated cart/checkout, form email delivery, analytics/consent and measured performance still need verification.",
+    "Redirect candidates remain staged for hidden destinations. DNS cutover and password removal were not performed."
+  ],
+  "merge": {
+    "pr": 1,
+    "sha": "fb7b5d396bac318400192b4ec808723b82c040b5",
+    "verified": true
+  }
 }
