@@ -8,6 +8,8 @@
 - Password protection remains enabled. DNS, domain routing, source data and order/payment settings were not changed. The public `dellarice.com` site still runs WordPress.
 - 12 products and 181 recipes remain drafts. Six imported standalone pages remain hidden. All 441 source media URLs have READY CDN mappings. No private customer/order exports were committed.
 
-Validation details and limits are in [destination-migration-checkpoint.md](destination-migration-checkpoint.md). The pinned theme checker passed locally with zero errors and nine inherited warnings; GitHub hosted validation was queued at merge time. No repository protection was bypassed.
+Validation details and limits are in [destination-migration-checkpoint.md](destination-migration-checkpoint.md). The pinned theme checker passed locally with zero errors and nine inherited warnings; GitHub hosted validation was queued at merge time and subsequently completed successfully. No repository protection was bypassed.
 
-Next: sign in to WordPress admin to export private commerce data and reconcile products before activation; review duplicate recipes and policies; complete live purchase-flow, delivery, analytics/consent and measured performance checks. Redirects are prepared but remain deferred for hidden draft destinations. DNS/domain cutover and password removal require separate authorization.
+WordPress admin sign-in now works. All 12 source product edit screens were reconciled against the Shopify drafts, and five captured title suffixes were corrected. The authenticated audit is retained in Shopify source metadata. No customer/order data is stored in this repository. Browser CSV-download and shipping/settings inspection timed out, so those operations are not claimed complete.
+
+Next: export/migrate private commerce records; reconcile shipping/payment/tax configuration before activation; review duplicate recipes and policies; complete live purchase-flow, delivery, analytics/consent and measured performance checks. Redirects are prepared but remain deferred for hidden draft destinations. DNS/domain cutover and password removal require separate authorization.

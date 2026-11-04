@@ -1388,7 +1388,14 @@
       390,
       768,
       1440
-    ]
+    ],
+    "authenticated_product_reconciliation": {
+      "products": 12,
+      "title_corrections": 5,
+      "status": "passed",
+      "audit_location": "Shopify della_migration.source metadata"
+    },
+    "hosted_theme_check": "success"
   },
   "themes": {
     "original_main": "189341139245",
@@ -1399,7 +1406,7 @@
     "previous_theme_role": "UNPUBLISHED"
   },
   "remaining": [
-    "Authenticated WordPress exports unavailable: admin redirects to login. Reconcile real SKUs/barcodes, hidden variations, stock, tax, shipping, customers/consent, orders/refunds, reviews, discounts and providers.",
+    "WordPress authentication is available. Private commerce record exports and shipping/payment/tax reconciliation remain incomplete; browser CSV-download and settings inspection timed out. Product fields were reconciled against authenticated source edit screens.",
     "Products/recipes remain drafts; six imported pages remain hidden. Review duplicates, product names and policies before publication.",
     "Full populated cart/checkout, form email delivery, analytics/consent and measured performance still need verification.",
     "Redirect candidates remain staged for hidden destinations. DNS cutover and password removal were not performed."
