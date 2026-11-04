@@ -66,12 +66,6 @@
         });
       }
 
-      context.add('animateSlide', event => {
-        const image = event.detail?.panel?.querySelector('img');
-        if (image) gsap.fromTo(image, { opacity: 0, scale: 1.035 }, { opacity: 1, scale: 1, duration: 0.55, ease: 'power2.out', clearProps: 'transform,opacity', overwrite: 'auto' });
-      });
-      // context.add stores the context-safe callback under its name.
-      scope.addEventListener('della:slide-change', context.animateSlide);
       context.add('focusReveal', event => {
         const target = event.target.closest('[data-della-motion="reveal"]');
         if (target) {
@@ -84,7 +78,6 @@
       scope.addEventListener('load', refresh, true);
       return () => {
         cleanup.forEach(remove => remove());
-        scope.removeEventListener('della:slide-change', context.animateSlide);
         scope.removeEventListener('focusin', context.focusReveal);
         scope.removeEventListener('load', refresh, true);
         select('[data-della-motion]').forEach(target => { delete target.dataset.dellaMotion; });
