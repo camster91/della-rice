@@ -59,11 +59,11 @@
         }
       }
     },
-    "type_header_font": "lilita_one_n4",
+    "type_header_font": "assistant_n4",
     "heading_scale": 100,
-    "type_body_font": "space_mono_n4",
+    "type_body_font": "assistant_n4",
     "body_scale": 100,
-    "page_width": 1280,
+    "page_width": 1300,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,

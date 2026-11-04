@@ -17,6 +17,8 @@ Connect `camster91/della-rice`, branch `main`, as an unpublished theme. Create p
 | wholesale | page.wholesale |
 | contact | page.contact |
 
+The standard page handles render editable Della section groups directly, so draft pages do not depend on publishing a theme just to select its templates. The named templates are retained for use on additional page handles.
+
 Each Della section supports editing, removal and reordering in the theme editor. Image slots accept merchant image uploads and otherwise use bundled source assets. Configure a real menu in the header section when required; default navigation covers the four pages and rice catalogue.
 
 ## Required before launch

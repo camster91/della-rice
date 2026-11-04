@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "heading": {
+      "type": "della-page-hero",
+      "settings": {
+        "eyebrow": "Contact us",
+        "heading": "We\u2019d love to hear from you.",
+        "text": "Start with a quick answer below, or send a note to our team in Brinkley."
+      }
+    },
+    "contact": {
+      "type": "della-contact",
+      "settings": {},
+      "blocks": {
+        "b0": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy Della Rice?",
+            "answer": "<p>Browse every variety in our <a href=\"/collections/all\">online store</a>, explore <a href=\"/pages/wholesale\">wholesale ordering</a> for your business, or ask about nearby retailers on our <a href=\"/pages/where-to-buy\">Where to Buy page</a>.</p>"
+          }
+        },
+        "b1": {
+          "type": "faq",
+          "settings": {
+            "question": "Is Della Rice gluten-free?",
+            "answer": "<p>Rice is naturally gluten-free. Check the current product packaging for ingredient and allergen information.</p>"
+          }
+        },
+        "b2": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does it take to cook?",
+            "answer": "<p>Most Della varieties are ready in about 20 minutes. Follow the package directions for the best results.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    }
+  },
+  "order": [
+    "heading",
+    "contact"
+  ],
+  "name": "Della Contact",
+  "type": "custom.della_contact"
+}

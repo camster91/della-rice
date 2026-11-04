@@ -341,7 +341,15 @@
       tabindex="-1"
       data-template="{{ template.name }}"
     >
-      {{ content_for_layout }}
+      {% if request.page_type == 'page' %}
+        {% case page.handle %}
+          {% when 'about', 'about-della' %}{% sections 'della-about-group' %}
+          {% when 'contact' %}{% sections 'della-contact-group' %}
+          {% when 'where-to-buy' %}{% sections 'della-where-to-buy-group' %}
+          {% when 'wholesale' %}{% sections 'della-wholesale-group' %}
+          {% else %}{{ content_for_layout }}
+        {% endcase %}
+      {% else %}{{ content_for_layout }}{% endif %}
     </main>
 
     {% sections 'footer-group' %}
