@@ -18,7 +18,7 @@
         "anchor": "our-story",
         "eyebrow": "Our story",
         "heading": "Family-owned since 1986.",
-        "text": "<p>For 40 years, Della has honored the deep-rooted traditions of Arkansas rice growing.</p><p>Every bag celebrates local growers and the communities they nourish.</p>",
+        "text": "<p>Della Rice was founded in 1986 by Lehman Fowler of Brinkley, Arkansas, under the name Della Gourmet Rice. After his retirement in 1994, the Ajmera Family acquired the business, expanded it nationwide, and introduced the organic product line now sold as Della Organic Rice.</p><p>Since 2020, Della has been proudly owned and operated by Stephen and Micah Hilsdon, both born and raised in Brinkley. With deep roots in the rice industry, they took ownership of Specialty Rice to preserve local jobs and uphold Della’s long-standing values. Stephen began as General Manager in 2006, later joined by Micah as Quality Manager.</p>",
         "asset_key": "13-2-imgImageDellaLeadershipOutdoorsInArkansas",
         "image_alt": "Della leadership outdoors in Arkansas"
       }
@@ -29,7 +29,7 @@
         "anchor": "meet-the-team",
         "eyebrow": "Meet the team",
         "heading": "The people behind the grain.",
-        "text": "<p>Farmers, families, and rice experts bring warmth, care, and quiet confidence to every Della bag.</p>",
+        "text": "<p><strong>Stephen &amp; Micah Hilsdon — Owner &amp; Operator</strong></p><p>Specialty Rice Inc. is still a family-owned business, run by Stephen and Micah Hilsdon of Brinkley, Arkansas. They both are from this town and have been in the rice industry and the community their whole lives.</p><p>When the opportunity arose to purchase the company, their decision was driven by one clear purpose: protect local jobs and keep the business rooted in Brinkley. The employees of Specialty Rice are more than coworkers, they are friends, neighbours, and extended family.</p><p><strong>Tammy Roberts — Office Manager - HR</strong></p>",
         "asset_key": "13-2-imgImageDellaLeadershipStandingInARiceField",
         "image_alt": "Della leadership standing in a rice field",
         "reverse": true
@@ -41,7 +41,7 @@
         "anchor": "impact",
         "eyebrow": "Our impact",
         "heading": "Rooted in the land and community.",
-        "text": "<p>Della\u2019s regenerative story centres practices designed to improve soil health, preserve habitats, protect groundwater, and lower gas emissions.</p>",
+        "text": "<p>As lifelong members of the farming community, Stephen and Micah deeply value the growers who partner with them. They are committed to helping farmers receive fair, competitive pricing for the rice they produce, recognizing that strong farms build strong communities.</p><p>The company is investing increasingly in regenerative rice practices, which are designed to improve soil health, conserve water, and minimize environmental impact. By doing so, the company ensures that future generations can continue farming the land productively and sustainably.</p>",
         "asset_key": "13-2-imgImageTwoBagsFromTheDellaRiceCollection",
         "image_alt": "Two bags from the Della rice collection",
         "reverse": true
@@ -51,9 +51,10 @@
       "type": "della-cta",
       "settings": {
         "anchor": "our-promise",
-        "eyebrow": "Bring Della to the table",
+        "eyebrow": "Our promise to you",
         "heading": "Find the nicest rice for you.",
-        "tone": "yellow"
+        "tone": "yellow",
+        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free &amp; Allergen-Free</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>"
       },
       "blocks": {
         "b0": {

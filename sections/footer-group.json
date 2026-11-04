@@ -4,7 +4,9 @@
   "sections": {
     "della-footer": {
       "type": "della-footer",
-      "settings": {}
+      "settings": {
+        "email": "info@dellarice.com"
+      }
     }
   },
   "order": [
