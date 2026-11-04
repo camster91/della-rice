@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "heading": {
+      "type": "della-page-hero",
+      "settings": {
+        "eyebrow": "About Della",
+        "heading": "Crafting better rice since 1986.",
+        "text": "A family-owned Arkansas company rooted in warm hospitality, thoughtful sourcing, and the people behind every grain."
+      }
+    },
+    "nav": {
+      "type": "della-about-nav",
+      "settings": {}
+    },
+    "story": {
+      "type": "della-story",
+      "settings": {
+        "anchor": "our-story",
+        "eyebrow": "Our story",
+        "heading": "Family-owned since 1986.",
+        "text": "<p>For 40 years, Della has honored the deep-rooted traditions of Arkansas rice growing.</p><p>Every bag celebrates local growers and the communities they nourish.</p>",
+        "asset_key": "13-2-imgImageDellaLeadershipOutdoorsInArkansas",
+        "image_alt": "Della leadership outdoors in Arkansas"
+      }
+    },
+    "team": {
+      "type": "della-story",
+      "settings": {
+        "anchor": "meet-the-team",
+        "eyebrow": "Meet the team",
+        "heading": "The people behind the grain.",
+        "text": "<p>Farmers, families, and rice experts bring warmth, care, and quiet confidence to every Della bag.</p>",
+        "asset_key": "13-2-imgImageDellaLeadershipStandingInARiceField",
+        "image_alt": "Della leadership standing in a rice field",
+        "reverse": true
+      }
+    },
+    "impact": {
+      "type": "della-story",
+      "settings": {
+        "anchor": "impact",
+        "eyebrow": "Our impact",
+        "heading": "Rooted in the land and community.",
+        "text": "<p>Della\u2019s regenerative story centres practices designed to improve soil health, preserve habitats, protect groundwater, and lower gas emissions.</p>",
+        "asset_key": "13-2-imgImageTwoBagsFromTheDellaRiceCollection",
+        "image_alt": "Two bags from the Della rice collection",
+        "reverse": true
+      }
+    },
+    "promise": {
+      "type": "della-cta",
+      "settings": {
+        "anchor": "our-promise",
+        "eyebrow": "Bring Della to the table",
+        "heading": "Find the nicest rice for you.",
+        "tone": "yellow"
+      },
+      "blocks": {
+        "b0": {
+          "type": "button",
+          "settings": {
+            "label": "Shop the collection",
+            "url": "/collections/all"
+          }
+        },
+        "b1": {
+          "type": "button",
+          "settings": {
+            "label": "Where to buy",
+            "url": "/pages/where-to-buy"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1"
+      ]
+    }
+  },
+  "order": [
+    "heading",
+    "nav",
+    "story",
+    "team",
+    "impact",
+    "promise"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "heading": {
+      "type": "della-page-hero",
+      "settings": {
+        "eyebrow": "From grain to table \u00b7 12 varieties",
+        "heading": "The People\u2019s Rice.",
+        "text": "All Natural, Organic, and Regenerative grains\u2014crafted with care and ready for every kind of table.",
+        "tone": "yellow"
+      }
+    },
+    "catalog": {
+      "type": "della-catalog",
+      "settings": {}
+    }
+  },
+  "order": [
+    "heading",
+    "catalog"
+  ]
+}

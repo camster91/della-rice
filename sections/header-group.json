@@ -1,0 +1,13 @@
+{
+  "name": "Della header",
+  "type": "header",
+  "sections": {
+    "della-header": {
+      "type": "della-header",
+      "settings": {}
+    }
+  },
+  "order": [
+    "della-header"
+  ]
+}

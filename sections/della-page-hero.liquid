@@ -1,0 +1,4 @@
+<section class="della-page-hero della-pad della-tone-{{ section.settings.tone }}"><p class="della-eyebrow">{{ section.settings.eyebrow | escape }}</p><h1>{{ section.settings.heading | escape }}</h1><p class="della-lead">{{ section.settings.text | escape }}</p></section>
+{% schema %}
+{"name":"Della page heading","settings":[{"type":"text","id":"eyebrow","label":"Eyebrow"},{"type":"text","id":"heading","label":"Heading"},{"type":"textarea","id":"text","label":"Description"},{"type":"select","id":"tone","label":"Colour","options":[{"value":"blue","label":"Blue"},{"value":"yellow","label":"Yellow"},{"value":"cream","label":"Cream"}],"default":"blue"}],"presets":[{"name":"Della page heading"}]}
+{% endschema %}

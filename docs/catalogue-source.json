@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Basmati White Rice",
+    "category": "All Natural",
+    "source_price": 7,
+    "source_currency": "USD",
+    "wordpress_handle": "basmati-white-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageBasmatiWhiteRiceAllNatural28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Arborio White Rice",
+    "category": "All Natural",
+    "source_price": 8,
+    "source_currency": "USD",
+    "wordpress_handle": "arborio-white-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageArborioWhiteRiceAllNatural28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Jasmine White Rice",
+    "category": "All Natural",
+    "source_price": 7,
+    "source_currency": "USD",
+    "wordpress_handle": "jasmine-white-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageJasmineWhiteRiceAllNatural28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Basmati Light Brown Rice",
+    "category": "All Natural",
+    "source_price": 7,
+    "source_currency": "USD",
+    "wordpress_handle": "basmati-light-brown-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageBasmatiLightBrownRiceAllNatural28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Jasmine White Rice",
+    "category": "Organic",
+    "source_price": 9,
+    "source_currency": "USD",
+    "wordpress_handle": "organic-jasmine-white-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageJasmineWhiteRiceOrganic28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Basmati Light Brown Rice",
+    "category": "Organic",
+    "source_price": 9,
+    "source_currency": "USD",
+    "wordpress_handle": "organic-basmati-light-brown-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageBasmatiLightBrownRiceOrganic28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Long Grain White Rice",
+    "category": "Organic",
+    "source_price": 9,
+    "source_currency": "USD",
+    "wordpress_handle": "organic-long-grain-white-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageLongGrainWhiteRiceOrganic28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Light Brown Rice",
+    "category": "Organic",
+    "source_price": 9,
+    "source_currency": "USD",
+    "wordpress_handle": "organic-light-brown",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageLightBrownRiceOrganic28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Long Grain Light Brown Rice",
+    "category": "Regenerative",
+    "source_price": 8,
+    "source_currency": "USD",
+    "wordpress_handle": "long-grain-light-brown-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageLongGrainLightBrownRiceRegenerative28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Long Grain White Rice",
+    "category": "Regenerative",
+    "source_price": 8,
+    "source_currency": "USD",
+    "wordpress_handle": "long-grain-white-rice",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageLongGrainWhiteRiceRegenerative28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Jasmine White Rice",
+    "category": "Regenerative",
+    "source_price": 8,
+    "source_currency": "USD",
+    "wordpress_handle": "jasmine-white-rice-2",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageJasmineWhiteRiceRegenerative28OunceBagImage",
+    "shopify_status": "not_imported"
+  },
+  {
+    "title": "Basmati Light Brown Rice",
+    "category": "Regenerative",
+    "source_price": 8,
+    "source_currency": "USD",
+    "wordpress_handle": "basmati-light-brown-rice-2",
+    "weight": "28 oz",
+    "asset_key": "1-643-imgImageBasmatiLightBrownRiceRegenerative28OunceBagImage",
+    "shopify_status": "not_imported"
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "hero": {
+      "type": "della-hero",
+      "settings": {},
+      "blocks": {
+        "b0": {
+          "type": "slide",
+          "settings": {
+            "label": "Della All Natural Jasmine White Rice on a table",
+            "asset_key": "home-imgContainer"
+          }
+        },
+        "b1": {
+          "type": "slide",
+          "settings": {
+            "label": "Della All Natural rice collection",
+            "asset_key": "home-imgImageAllNaturalDellaRice"
+          }
+        },
+        "b2": {
+          "type": "slide",
+          "settings": {
+            "label": "Rice plants ready for harvest in Arkansas",
+            "asset_key": "home-imgImageRicePlantsReadyForHarvestInAnArkansasField"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "benefits": {
+      "type": "della-benefits",
+      "settings": {},
+      "blocks": {
+        "b0": {
+          "type": "benefit",
+          "settings": {
+            "heading": "Family-owned",
+            "text": "Rooted in Arkansas rice-growing tradition since 1986."
+          }
+        },
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "heading": "Proudly American",
+            "text": "Thoughtfully sourced in the USA with quiet confidence in every grain."
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "heading": "All Natural",
+            "text": "Exceptional flavor and fluffy texture for everyday tables."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "collections": {
+      "type": "della-collections",
+      "settings": {},
+      "blocks": {
+        "b0": {
+          "type": "collection",
+          "settings": {
+            "heading": "All Natural",
+            "anchor": "all-natural",
+            "asset_key": "home-imgImageAllNaturalDellaRice"
+          }
+        },
+        "b1": {
+          "type": "collection",
+          "settings": {
+            "heading": "Organic",
+            "anchor": "organic",
+            "asset_key": "home-imgImageOrganicDellaRice"
+          }
+        },
+        "b2": {
+          "type": "collection",
+          "settings": {
+            "heading": "Regenerative",
+            "anchor": "regenerative",
+            "asset_key": "home-imgImageRegenerativeDellaRice"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "products": {
+      "type": "della-catalog",
+      "settings": {
+        "featured": true,
+        "heading": "Find your nicest rice",
+        "limit": 12
+      }
+    },
+    "story": {
+      "type": "della-story",
+      "settings": {
+        "eyebrow": "Family-owned since 1986",
+        "heading": "Rooted in Arkansas. Made for everyone.",
+        "text": "<p>Della celebrates the farmers, families, and cooks behind every grain\u2014bringing warmth, care, and four decades of rice expertise to the table.</p>",
+        "tone": "blue",
+        "asset_key": "home-imgImageRicePlantsReadyForHarvestInAnArkansasField",
+        "image_alt": "Rice plants ready for harvest in an Arkansas field",
+        "button_label": "Our story",
+        "button_url": "/pages/about"
+      }
+    },
+    "regenerative": {
+      "type": "della-cta",
+      "settings": {
+        "eyebrow": "Regenerative farming",
+        "heading": "Good for the grain. Thoughtful about the ground.",
+        "text": "Practices designed to improve soil health, preserve habitats, protect groundwater, and lower gas emissions.",
+        "tone": "tan",
+        "inline": true
+      },
+      "blocks": {
+        "b0": {
+          "type": "button",
+          "settings": {
+            "label": "Shop regenerative",
+            "url": "/collections/all#regenerative"
+          }
+        }
+      },
+      "block_order": [
+        "b0"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "benefits",
+    "collections",
+    "products",
+    "story",
+    "regenerative"
+  ]
+}

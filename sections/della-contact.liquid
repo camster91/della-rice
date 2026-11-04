@@ -1,0 +1,12 @@
+<section class="della-contact della-pad"><div><p class="della-eyebrow">Frequently asked</p><h2>Before you reach out</h2><div class="della-faq">{% for block in section.blocks %}<details{% if forloop.first %} open{% endif %} {{ block.shopify_attributes }}><summary>{{ block.settings.question | escape }}</summary><div>{{ block.settings.answer }}</div></details>{% endfor %}</div>{% if section.settings.phone != blank %}<p><a href="tel:{{ section.settings.phone | remove: ' ' | escape }}">{{ section.settings.phone | escape }}</a></p>{% endif %}{% if section.settings.address != blank %}<p>{{ section.settings.address | escape }}</p>{% endif %}</div>
+<div><p class="della-eyebrow">Send us a note</p>{% form 'contact', id: 'DellaContact', class: 'della-form' %}
+{% if form.posted_successfully? %}<p role="status" tabindex="-1">Thank you. Your message has been sent.</p>{% elsif form.errors %}<div role="alert">{{ form.errors | default_errors }}</div>{% endif %}
+<label for="DellaName">Name</label><input id="DellaName" name="contact[name]" type="text" autocomplete="name" value="{{ form.name | default: customer.name | escape }}" required>
+<label for="DellaEmail">Email</label><input id="DellaEmail" name="contact[email]" type="email" autocomplete="email" value="{{ form.email | default: customer.email | escape }}" required{% if form.errors contains 'email' %} aria-invalid="true"{% endif %}>
+<label for="DellaPhone">Phone (optional)</label><input id="DellaPhone" name="contact[phone]" type="tel" autocomplete="tel" value="{{ form.phone | escape }}">
+<label for="DellaTopic">What can we help with?</label><select id="DellaTopic" name="contact[topic]"><option>General question</option><option>Where to buy</option><option>Wholesale</option><option>Foodservice</option><option>Private label</option><option>Something else</option></select>
+<label for="DellaMessage">Message</label><textarea id="DellaMessage" name="contact[body]" rows="6" required>{{ form.body | escape }}</textarea><button class="della-button" type="submit">Send message</button>
+{% endform %}</div></section>
+{% schema %}
+{"name":"Della contact and FAQ","settings":[{"type":"text","id":"phone","label":"Phone","default":"1-800-467-1233"},{"type":"text","id":"address","label":"Address","default":"1000 W 1st St., Brinkley, AR 72021"}],"blocks":[{"type":"faq","name":"Question","settings":[{"type":"text","id":"question","label":"Question"},{"type":"richtext","id":"answer","label":"Answer"}]}],"presets":[{"name":"Della contact and FAQ"}]}
+{% endschema %}

@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "heading": {
+      "type": "della-page-hero",
+      "settings": {
+        "eyebrow": "Where to buy",
+        "heading": "Della rice, your way.",
+        "text": "Choose the path that fits your needs and we\u2019ll point you in the right direction."
+      }
+    },
+    "paths": {
+      "type": "della-buying-paths",
+      "settings": {},
+      "blocks": {
+        "b0": {
+          "type": "path",
+          "settings": {
+            "label": "Retail",
+            "heading": "Find Della near you",
+            "text": "Find grocery and online retail options.",
+            "button": "Explore retail",
+            "url": "#store-finder",
+            "tone": "cream"
+          }
+        },
+        "b1": {
+          "type": "path",
+          "settings": {
+            "label": "Wholesale",
+            "heading": "Stock your shelves",
+            "text": "For grocery, specialty retail, and independent market orders.",
+            "button": "Explore wholesale",
+            "url": "/pages/wholesale",
+            "tone": "dark"
+          }
+        },
+        "b2": {
+          "type": "path",
+          "settings": {
+            "label": "Foodservice",
+            "heading": "Serve Della",
+            "text": "For restaurants, hospitality, and institutional kitchens.",
+            "button": "Explore foodservice",
+            "url": "/pages/contact",
+            "tone": "blue"
+          }
+        },
+        "b3": {
+          "type": "path",
+          "settings": {
+            "label": "Private label",
+            "heading": "Build your rice line",
+            "text": "Talk to our team about sourcing, packaging, production, and program fit.",
+            "button": "Explore private label",
+            "url": "/pages/contact",
+            "tone": "yellow"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "retail": {
+      "type": "della-retail",
+      "settings": {}
+    }
+  },
+  "order": [
+    "heading",
+    "paths",
+    "retail"
+  ]
+}

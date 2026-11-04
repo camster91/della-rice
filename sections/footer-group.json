@@ -1,0 +1,13 @@
+{
+  "name": "Della footer",
+  "type": "footer",
+  "sections": {
+    "della-footer": {
+      "type": "della-footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "della-footer"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "heading": {
+      "type": "della-page-hero",
+      "settings": {
+        "eyebrow": "Wholesale",
+        "heading": "Stock Della Rice in your store",
+        "text": "Ready to offer your customers the best? Choose your preferred platform below to start stocking Della Rice.",
+        "tone": "cream"
+      }
+    },
+    "platforms": {
+      "type": "della-wholesale",
+      "settings": {},
+      "blocks": {
+        "b0": {
+          "type": "platform",
+          "settings": {
+            "name": "Faire",
+            "heading": "Order via Faire",
+            "text": "New to Faire? Create an account and place your order directly through their marketplace.",
+            "button": "Explore Faire",
+            "url": "https://faire.com/direct/dellarice?utm_source=widgetv2&widgetToken=bw_mvxjpmajez"
+          }
+        },
+        "b1": {
+          "type": "platform",
+          "settings": {
+            "name": "Airgoods Direct",
+            "heading": "Order directly",
+            "text": "Prefer to order directly? Use our Airgoods Direct portal for wholesale ordering.",
+            "button": "Explore Airgoods",
+            "url": "https://airgoods.com/u/della-rice?sign-up=direct&utm_source=brand_referral&utm_medium=direct_widget&utm_campaign=automated&utm_content=airgoods_direct"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1"
+      ]
+    },
+    "contact": {
+      "type": "della-cta",
+      "settings": {
+        "eyebrow": "We\u2019re here to help",
+        "heading": "Questions about foodservice, private label or bulk orders?",
+        "tone": "tan"
+      },
+      "blocks": {
+        "b0": {
+          "type": "button",
+          "settings": {
+            "label": "Contact our team",
+            "url": "/pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "b0"
+      ]
+    }
+  },
+  "order": [
+    "heading",
+    "platforms",
+    "contact"
+  ]
+}

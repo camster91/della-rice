@@ -1,0 +1,31 @@
+<section class="della-catalog{% if section.settings.featured %} della-pad{% endif %}">
+{% if section.settings.featured %}<div class="della-section-heading"><div><p class="della-eyebrow">Customer favourites</p><h2 class="della-serif">{{ section.settings.heading | escape }}</h2></div><a href="{{ routes.all_products_collection_url }}">Shop every variety →</a></div>{% endif %}
+{% liquid
+  assign product_collection = section.settings.collection
+  if product_collection == blank
+    assign product_collection = collections.all
+  endif
+%}
+{% if product_collection.products_count > 0 %}
+  {% if section.settings.featured %}<div class="della-product-grid della-product-grid--featured">{% for product in product_collection.products limit: section.settings.limit %}{% render 'della-product-card', product: product %}{% endfor %}</div>
+  {% else %}
+    <nav class="della-catalog-tabs" aria-label="Rice collections"><a href="#all-rice">All rice</a><a href="#all-natural">All Natural</a><a href="#organic">Organic</a><a href="#regenerative">Regenerative</a></nav>
+    <div id="all-rice">
+    {% paginate product_collection.products by 48 %}
+      {% assign categories = 'All Natural|Organic|Regenerative' | split: '|' %}
+      {% for category in categories %}
+        <section id="{{ category | handleize }}" class="della-catalog-category della-tone-{% case forloop.index %}{% when 1 %}green{% when 2 %}yellow{% else %}blue{% endcase %}"><p class="della-eyebrow">{{ category }}</p><h2>{% case forloop.index %}{% when 1 %}An exquisite grain{% when 2 %}Certified organic{% else %}Rooted in better practices{% endcase %}</h2><p>{% case forloop.index %}{% when 1 %}Exceptional flavor and fluffy texture for everyday tables.{% when 2 %}Thoughtfully grown varieties with the warmth, flavor, and quiet confidence of Della.{% else %}Rice grown with practices designed to improve soil health, preserve habitats, and protect groundwater.{% endcase %}</p><div class="della-product-grid">{% for product in product_collection.products %}{% if product.type == category or product.tags contains category %}{% render 'della-product-card', product: product, category: category %}{% endif %}{% endfor %}</div></section>
+      {% endfor %}
+      {% assign has_other_products = false %}{% for product in product_collection.products %}{% unless product.type == 'All Natural' or product.type == 'Organic' or product.type == 'Regenerative' or product.tags contains 'All Natural' or product.tags contains 'Organic' or product.tags contains 'Regenerative' %}{% assign has_other_products = true %}{% endunless %}{% endfor %}
+      {% if has_other_products %}<section class="della-catalog-category"><h2>All other varieties</h2><div class="della-product-grid">{% for product in product_collection.products %}{% unless product.type == 'All Natural' or product.type == 'Organic' or product.type == 'Regenerative' or product.tags contains 'All Natural' or product.tags contains 'Organic' or product.tags contains 'Regenerative' %}{% render 'della-product-card', product: product %}{% endunless %}{% endfor %}</div></section>{% endif %}
+      {% if paginate.pages > 1 %}{% render 'pagination', paginate: paginate %}{% endif %}
+    {% endpaginate %}</div>
+  {% endif %}
+{% else %}
+  <p class="della-catalog-notice">Catalogue preview — products are being migrated. Purchasing will be available after store setup.</p>
+  {% render 'della-catalog-preview', featured: section.settings.featured %}
+{% endif %}
+</section>
+{% schema %}
+{"name":"Della rice catalogue","settings":[{"type":"text","id":"heading","label":"Heading","default":"Find your nicest rice"},{"type":"collection","id":"collection","label":"Product collection"},{"type":"checkbox","id":"featured","label":"Featured products layout","default":false},{"type":"range","id":"limit","label":"Featured product count","min":3,"max":12,"step":1,"default":3}],"presets":[{"name":"Della rice catalogue"}]}
+{% endschema %}

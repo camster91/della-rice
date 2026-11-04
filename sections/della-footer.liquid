@@ -1,0 +1,9 @@
+<footer class="della-footer della-pad">
+  <div><a class="della-footer-logo" href="{{ routes.root_url }}" aria-label="Della Rice home">{% render 'della-image', key: 'home-imgImageDellaTheNicestRice', alt: 'Della — The Nicest Rice' %}</a><p>{{ section.settings.description | escape }}</p></div>
+  <div><h2>From grain to table</h2><a href="{{ routes.all_products_collection_url }}">Shop all rice</a><a href="/pages/about">Our story</a><a href="/pages/where-to-buy">Where to buy</a><a href="/pages/wholesale">Wholesale</a></div>
+  <div><h2>Say hello</h2><a href="/pages/contact">Contact us</a>{% if section.settings.email != blank %}<a href="mailto:{{ section.settings.email | escape }}">{{ section.settings.email | escape }}</a>{% endif %}<p>© {{ 'now' | date: '%Y' }} {{ shop.name | escape }}</p>{% for policy in shop.policies %}{% if policy.body != blank %}<a href="{{ policy.url }}">{{ policy.title | escape }}</a>{% endif %}{% endfor %}</div>
+  {% if section.settings.show_signup %}<div class="della-signup"><h2>Good things, by the grain.</h2>{% form 'customer', id: 'DellaNewsletter' %}<input type="hidden" name="contact[tags]" value="newsletter"><label for="DellaNewsletterEmail">Email address</label><input id="DellaNewsletterEmail" type="email" name="contact[email]" autocomplete="email" required><button class="della-button" type="submit">Sign up</button>{% if form.posted_successfully? %}<p role="status">Thanks for signing up.</p>{% endif %}{{ form.errors | default_errors }}{% endform %}</div>{% endif %}
+</footer>
+{% schema %}
+{"name":"Della footer","settings":[{"type":"text","id":"description","label":"Description","default":"Lovingly grown in Arkansas. Family-owned since 1986."},{"type":"text","id":"email","label":"Contact email","default":"hello@dellarice.com"},{"type":"checkbox","id":"show_signup","label":"Show newsletter signup","default":false}]}
+{% endschema %}
