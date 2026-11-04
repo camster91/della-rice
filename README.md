@@ -16,6 +16,8 @@ The contact form uses Shopify's native contact form. A live retailer database ha
 
 See [migration checklist](docs/migration.md) and [source catalogue](docs/catalogue-source.json). This repository contains no WordPress credentials, customer records, orders or temporary Figma download links.
 
+The migration staging branch also contains [captured public source data and import payloads](migration/README.md), [capture results and blockers](migration/capture-report.md), and [GSAP motion implementation notes](docs/gsap-motion.md). Capture is complete for the public sitemap inventory; destination imports and animation browser verification are still pending. Private WooCommerce exports must never be committed to this repository.
+
 ## Design notes
 
 Colours, spacing, layouts, images and typography roles follow the Figma baseline. Lilita One and Spline Sans Mono are bundled. Recoleta is referenced for the serif homepage headings with Georgia as the fallback; a licensed webfont file is still required for an exact Recoleta match. The green footer logo is rendered cream for legibility.

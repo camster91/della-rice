@@ -1466,5 +1466,17 @@
         "label": "t:settings_schema.customer_accounts.settings.customer_account_menu.label"
       }
     ]
+  },
+  {
+    "name": "Della motion",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "della_enable_motion",
+        "label": "Enable GSAP animations",
+        "default": true,
+        "info": "Scroll reveals and product hover effects. Automatically respects reduced-motion preferences."
+      }
+    ]
   }
 ]

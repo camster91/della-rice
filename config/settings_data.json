@@ -188,7 +188,8 @@
           "color_scheme": "scheme-1"
         }
       }
-    }
+    },
+    "della_enable_motion": true
   },
   "presets": {
     "Dawn": {

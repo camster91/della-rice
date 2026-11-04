@@ -1,0 +1,13 @@
+{
+  "products": 12,
+  "product_gallery_references": 34,
+  "source_pages": 28,
+  "source_recipes": 181,
+  "unique_media_files": 441,
+  "recipe_duplicate_groups": 14,
+  "recipes_in_duplicate_groups": 36,
+  "proposed_new_pages": 6,
+  "review_required_policies": 3,
+  "target_currency_check": "must_confirm_USD_before_product_import",
+  "shopify_write_status": "not_started_browser_unavailable"
+}

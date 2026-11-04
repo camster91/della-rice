@@ -1,0 +1,14 @@
+{
+  "sitemap_urls": 221,
+  "products": 12,
+  "product_images": 34,
+  "pages": 28,
+  "recipes": 181,
+  "recipe_duplicate_groups": 14,
+  "errors": 0,
+  "source_currencies": [
+    "USD"
+  ],
+  "shopify_imported": false,
+  "note": "Public content only. Private stock counts, unpublished products, customers, orders, coupons, tax and payment settings require authenticated export. Verify Shopify currency is USD before importing prices. All product rows are draft and unpublished."
+}

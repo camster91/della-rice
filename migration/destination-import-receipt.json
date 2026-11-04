@@ -1,0 +1,1395 @@
+{
+  "store": "della-rice-1hj0pj1j.myshopify.com",
+  "currency": "USD",
+  "verified_at": "2026-11-04",
+  "products": [
+    {
+      "source_handle": "arborio-white-rice",
+      "id": "gid://shopify/Product/15452081029421",
+      "variantId": "gid://shopify/ProductVariant/68170786963757"
+    },
+    {
+      "source_handle": "basmati-light-brown-rice-2",
+      "id": "gid://shopify/Product/15452081389869",
+      "variantId": "gid://shopify/ProductVariant/68170787389741"
+    },
+    {
+      "source_handle": "basmati-light-brown-rice",
+      "id": "gid://shopify/Product/15452081455405",
+      "variantId": "gid://shopify/ProductVariant/68170787455277"
+    },
+    {
+      "source_handle": "basmati-white-rice",
+      "id": "gid://shopify/Product/15452081520941",
+      "variantId": "gid://shopify/ProductVariant/68170787520813"
+    },
+    {
+      "source_handle": "jasmine-white-rice-2",
+      "id": "gid://shopify/Product/15452081619245",
+      "variantId": "gid://shopify/ProductVariant/68170787619117"
+    },
+    {
+      "source_handle": "jasmine-white-rice",
+      "id": "gid://shopify/Product/15452081717549",
+      "variantId": "gid://shopify/ProductVariant/68170787815725"
+    },
+    {
+      "source_handle": "long-grain-light-brown-rice",
+      "id": "gid://shopify/Product/15452081946925",
+      "variantId": "gid://shopify/ProductVariant/68170789060909"
+    },
+    {
+      "source_handle": "long-grain-white-rice",
+      "id": "gid://shopify/Product/15452082012461",
+      "variantId": "gid://shopify/ProductVariant/68170790175021"
+    },
+    {
+      "source_handle": "organic-basmati-light-brown-rice",
+      "id": "gid://shopify/Product/15452082045229",
+      "variantId": "gid://shopify/ProductVariant/68170790240557"
+    },
+    {
+      "source_handle": "organic-jasmine-white-rice",
+      "id": "gid://shopify/Product/15452082110765",
+      "variantId": "gid://shopify/ProductVariant/68170790961453"
+    },
+    {
+      "source_handle": "organic-light-brown",
+      "id": "gid://shopify/Product/15452082143533",
+      "variantId": "gid://shopify/ProductVariant/68170790994221"
+    },
+    {
+      "source_handle": "organic-long-grain-white-rice",
+      "id": "gid://shopify/Product/15452082209069",
+      "variantId": "gid://shopify/ProductVariant/68170791059757"
+    }
+  ],
+  "pages": [
+    {
+      "source_url": "https://dellarice.com/natural-facts/",
+      "id": "gid://shopify/Page/165860442413",
+      "handle": "natural-facts",
+      "isPublished": false
+    },
+    {
+      "source_url": "https://dellarice.com/organic-facts/",
+      "id": "gid://shopify/Page/165860475181",
+      "handle": "organic-facts",
+      "isPublished": false
+    },
+    {
+      "source_url": "https://dellarice.com/regenerative-facts/",
+      "id": "gid://shopify/Page/165860507949",
+      "handle": "regenerative-facts",
+      "isPublished": false
+    },
+    {
+      "source_url": "https://dellarice.com/regenfacts/",
+      "id": "gid://shopify/Page/165860540717",
+      "handle": "regenfacts",
+      "isPublished": false
+    },
+    {
+      "source_url": "https://dellarice.com/ricefacts/",
+      "id": "gid://shopify/Page/165860573485",
+      "handle": "ricefacts",
+      "isPublished": false
+    },
+    {
+      "source_url": "https://dellarice.com/sellsheets/",
+      "id": "gid://shopify/Page/165860606253",
+      "handle": "sellsheets",
+      "isPublished": false
+    }
+  ],
+  "recipes": [
+    {
+      "source_url": "https://dellarice.com/recipe/3-beans-and-brown-basmati-rice-salad-2/",
+      "id": "gid://shopify/Article/686796144941",
+      "handle": "3-beans-and-brown-basmati-rice-salad-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/3-beans-and-brown-basmati-rice-salad/",
+      "id": "gid://shopify/Article/686796177709",
+      "handle": "3-beans-and-brown-basmati-rice-salad",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/asian-inspired-rice-and-beef-skillet/",
+      "id": "gid://shopify/Article/686796210477",
+      "handle": "asian-inspired-rice-and-beef-skillet",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/basmati-mushroom-rice/",
+      "id": "gid://shopify/Article/686796243245",
+      "handle": "basmati-mushroom-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/beef-and-broccoli-stir-fry/",
+      "id": "gid://shopify/Article/686796276013",
+      "handle": "beef-and-broccoli-stir-fry",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/beef-stroganoff/",
+      "id": "gid://shopify/Article/686796308781",
+      "handle": "beef-stroganoff",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/bourbon-chicken/",
+      "id": "gid://shopify/Article/686796341549",
+      "handle": "bourbon-chicken",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/braised-pork-loin-chop-with-steamed-broccoli-and-basmati-wild-rice-blend/",
+      "id": "gid://shopify/Article/686796374317",
+      "handle": "braised-pork-loin-chop-with-steamed-broccoli-and-basmati-wild-rice-blend",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/brown-rice-crab-cakes/",
+      "id": "gid://shopify/Article/686796407085",
+      "handle": "brown-rice-crab-cakes",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/buttered-lobster-rice/",
+      "id": "gid://shopify/Article/686796439853",
+      "handle": "buttered-lobster-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cabbage-fried-rice/",
+      "id": "gid://shopify/Article/686796472621",
+      "handle": "cabbage-fried-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cajun-jambalaya/",
+      "id": "gid://shopify/Article/686796505389",
+      "handle": "cajun-jambalaya",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cajun-lemon-butter-tilapia-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686796538157",
+      "handle": "cajun-lemon-butter-tilapia-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cajun-swai-over-salad-with-brown-basmati-rice-2/",
+      "id": "gid://shopify/Article/686796570925",
+      "handle": "cajun-swai-over-salad-with-brown-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cajun-swai-over-salad-with-brown-basmati-rice-3/",
+      "id": "gid://shopify/Article/686796603693",
+      "handle": "cajun-swai-over-salad-with-brown-basmati-rice-3",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cajun-swai-over-salad-with-brown-basmati-rice/",
+      "id": "gid://shopify/Article/686796636461",
+      "handle": "cajun-swai-over-salad-with-brown-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/caribbean-rice-beans/",
+      "id": "gid://shopify/Article/686796669229",
+      "handle": "caribbean-rice-beans",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cashew-chicken-rice-bowl/",
+      "id": "gid://shopify/Article/686796701997",
+      "handle": "cashew-chicken-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-and-mushroom-rice-casserole-2/",
+      "id": "gid://shopify/Article/686796734765",
+      "handle": "chicken-and-mushroom-rice-casserole-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-and-mushroom-rice-casserole/",
+      "id": "gid://shopify/Article/686796767533",
+      "handle": "chicken-and-mushroom-rice-casserole",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-and-wild-rice-soup/",
+      "id": "gid://shopify/Article/686796800301",
+      "handle": "chicken-and-wild-rice-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-artichoke-and-lemon-zest-rice-soup/",
+      "id": "gid://shopify/Article/686796833069",
+      "handle": "chicken-artichoke-and-lemon-zest-rice-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-asparagus-basmati-quinoa-salad/",
+      "id": "gid://shopify/Article/686796865837",
+      "handle": "chicken-asparagus-basmati-quinoa-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-burrito-bowl/",
+      "id": "gid://shopify/Article/686796898605",
+      "handle": "chicken-burrito-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-gyro-lemon-zest-rice-salad/",
+      "id": "gid://shopify/Article/686796931373",
+      "handle": "chicken-gyro-lemon-zest-rice-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chicken-katsu-rice-bowl/",
+      "id": "gid://shopify/Article/686796964141",
+      "handle": "chicken-katsu-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chickpea-bean-curry-2/",
+      "id": "gid://shopify/Article/686796996909",
+      "handle": "chickpea-bean-curry-2",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chickpea-bean-curry/",
+      "id": "gid://shopify/Article/686797029677",
+      "handle": "chickpea-bean-curry",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/chili-lime-tilapia-and-bok-choy-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686797062445",
+      "handle": "chili-lime-tilapia-and-bok-choy-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/citrus-chili-swai-over-basmati-rice-and-salad/",
+      "id": "gid://shopify/Article/686797095213",
+      "handle": "citrus-chili-swai-over-basmati-rice-and-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/citrus-shrimp-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686797127981",
+      "handle": "citrus-shrimp-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cod-with-tomato-white-wine-stew-and-basmati-rice/",
+      "id": "gid://shopify/Article/686797160749",
+      "handle": "cod-with-tomato-white-wine-stew-and-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/cowboy-rice-salad/",
+      "id": "gid://shopify/Article/686797193517",
+      "handle": "cowboy-rice-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/creamy-parmesan-one-pot-chicken-and-rice/",
+      "id": "gid://shopify/Article/686797226285",
+      "handle": "creamy-parmesan-one-pot-chicken-and-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/creamy-tuscan-chicken-with-basmati-rice/",
+      "id": "gid://shopify/Article/686797259053",
+      "handle": "creamy-tuscan-chicken-with-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/diet-cabbage-soup-with-basmati-and-wild-rice/",
+      "id": "gid://shopify/Article/686797291821",
+      "handle": "diet-cabbage-soup-with-basmati-and-wild-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/dijon-potato-spinach-kielbasa-and-brown-rice/",
+      "id": "gid://shopify/Article/686797324589",
+      "handle": "dijon-potato-spinach-kielbasa-and-brown-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/dirty-ground-beef-cajun-rice/",
+      "id": "gid://shopify/Article/686797357357",
+      "handle": "dirty-ground-beef-cajun-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/easy-jalapeno-popper-chicken-wild-rice-soup/",
+      "id": "gid://shopify/Article/686797390125",
+      "handle": "easy-jalapeno-popper-chicken-wild-rice-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/easy-mexican-rice-quinoa-bowls/",
+      "id": "gid://shopify/Article/686797422893",
+      "handle": "easy-mexican-rice-quinoa-bowls",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/easy-parmesan-chicken-and-rice/",
+      "id": "gid://shopify/Article/686797455661",
+      "handle": "easy-parmesan-chicken-and-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/easy-vegan-ginger-basmati-quinoa-salad-bowl/",
+      "id": "gid://shopify/Article/686797488429",
+      "handle": "easy-vegan-ginger-basmati-quinoa-salad-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/filipino-styled-bbq-skewers-over-salad-and-jasmine-rice-2/",
+      "id": "gid://shopify/Article/686797521197",
+      "handle": "filipino-styled-bbq-skewers-over-salad-and-jasmine-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/filipino-styled-bbq-skewers-over-salad-and-jasmine-rice/",
+      "id": "gid://shopify/Article/686797553965",
+      "handle": "filipino-styled-bbq-skewers-over-salad-and-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/fresh-shrimp-tacos-with-cilantro-lime-rice/",
+      "id": "gid://shopify/Article/686797586733",
+      "handle": "fresh-shrimp-tacos-with-cilantro-lime-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/fried-chicken-rice-bowl/",
+      "id": "gid://shopify/Article/686797619501",
+      "handle": "fried-chicken-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/garlic-and-herb-pork-tenderloin-skillet/",
+      "id": "gid://shopify/Article/686797652269",
+      "handle": "garlic-and-herb-pork-tenderloin-skillet",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/garlicky-spinach-shrimp-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686797685037",
+      "handle": "garlicky-spinach-shrimp-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/general-tsos-chicken/",
+      "id": "gid://shopify/Article/686797717805",
+      "handle": "general-tsos-chicken",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/glazed-chunky-pork-loin-vege-salad-over-rice/",
+      "id": "gid://shopify/Article/686797750573",
+      "handle": "glazed-chunky-pork-loin-vege-salad-over-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/grilled-vegetables-and-sausages-over-rice-with-spicy-peanut-sauce/",
+      "id": "gid://shopify/Article/686797783341",
+      "handle": "grilled-vegetables-and-sausages-over-rice-with-spicy-peanut-sauce",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/ground-beef-potatoes-with-brown-rice/",
+      "id": "gid://shopify/Article/686797816109",
+      "handle": "ground-beef-potatoes-with-brown-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/ground-beef-tomato-brown-rice-soup/",
+      "id": "gid://shopify/Article/686797848877",
+      "handle": "ground-beef-tomato-brown-rice-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/hawaiian-luau-fried-rice/",
+      "id": "gid://shopify/Article/686797881645",
+      "handle": "hawaiian-luau-fried-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/hawaiian-shrimp/",
+      "id": "gid://shopify/Article/686797914413",
+      "handle": "hawaiian-shrimp",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/hawaiian-tuna-poke-rice-bowl/",
+      "id": "gid://shopify/Article/686797947181",
+      "handle": "hawaiian-tuna-poke-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/healthy-chicken-wild-rice-bean-soup/",
+      "id": "gid://shopify/Article/686797979949",
+      "handle": "healthy-chicken-wild-rice-bean-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/hoisin-tofu-jasmine-rice-bowl/",
+      "id": "gid://shopify/Article/686798012717",
+      "handle": "hoisin-tofu-jasmine-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-garlic-pork-chops-over-brown-basmati-rice-2/",
+      "id": "gid://shopify/Article/686798045485",
+      "handle": "honey-garlic-pork-chops-over-brown-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-garlic-pork-chops-over-brown-basmati-rice-3/",
+      "id": "gid://shopify/Article/686798078253",
+      "handle": "honey-garlic-pork-chops-over-brown-basmati-rice-3",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-garlic-pork-chops-over-brown-basmati-rice/",
+      "id": "gid://shopify/Article/686798111021",
+      "handle": "honey-garlic-pork-chops-over-brown-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-garlic-shrimp/",
+      "id": "gid://shopify/Article/686798143789",
+      "handle": "honey-garlic-shrimp",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-ginger-garlic-chicken/",
+      "id": "gid://shopify/Article/686798176557",
+      "handle": "honey-ginger-garlic-chicken",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-sriracha-chicken-2/",
+      "id": "gid://shopify/Article/686798209325",
+      "handle": "honey-sriracha-chicken-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/honey-sriracha-chicken/",
+      "id": "gid://shopify/Article/686798242093",
+      "handle": "honey-sriracha-chicken",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-japanese-curry-with-basmati-rice-2/",
+      "id": "gid://shopify/Article/686798274861",
+      "handle": "instant-japanese-curry-with-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-japanese-curry-with-basmati-rice-3/",
+      "id": "gid://shopify/Article/686798307629",
+      "handle": "instant-japanese-curry-with-basmati-rice-3",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-japanese-curry-with-basmati-rice/",
+      "id": "gid://shopify/Article/686798340397",
+      "handle": "instant-japanese-curry-with-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-pot-cajun-pepper-shrimp/",
+      "id": "gid://shopify/Article/686798373165",
+      "handle": "instant-pot-cajun-pepper-shrimp",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-pot-chicken-and-rice/",
+      "id": "gid://shopify/Article/686798405933",
+      "handle": "instant-pot-chicken-and-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-pot-chicken-lemon-garlic-rice-pilaf/",
+      "id": "gid://shopify/Article/686798438701",
+      "handle": "instant-pot-chicken-lemon-garlic-rice-pilaf",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-pot-cuban-shrimp-with-rice-and-beans/",
+      "id": "gid://shopify/Article/686798471469",
+      "handle": "instant-pot-cuban-shrimp-with-rice-and-beans",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-pot-curried-chicken-and-basmati-rice/",
+      "id": "gid://shopify/Article/686798504237",
+      "handle": "instant-pot-curried-chicken-and-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instant-pot-shrimp-and-broccoli/",
+      "id": "gid://shopify/Article/686798537005",
+      "handle": "instant-pot-shrimp-and-broccoli",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-cheesy-ground-beef-rice/",
+      "id": "gid://shopify/Article/686798569773",
+      "handle": "instantpot-cheesy-ground-beef-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-chicken-congee/",
+      "id": "gid://shopify/Article/686798602541",
+      "handle": "instantpot-chicken-congee",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-chicken-pot-roast/",
+      "id": "gid://shopify/Article/686798635309",
+      "handle": "instantpot-chicken-pot-roast",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-hearty-ginger-chicken-brown-rice/",
+      "id": "gid://shopify/Article/686798668077",
+      "handle": "instantpot-hearty-ginger-chicken-brown-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-lemony-cajun-shrimp-and-basmati-rice/",
+      "id": "gid://shopify/Article/686798700845",
+      "handle": "instantpot-lemony-cajun-shrimp-and-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-mexican-basmati-quinoa/",
+      "id": "gid://shopify/Article/686798733613",
+      "handle": "instantpot-mexican-basmati-quinoa",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-spicy-curried-shrimp-basmati-rice/",
+      "id": "gid://shopify/Article/686798766381",
+      "handle": "instantpot-spicy-curried-shrimp-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-sweet-and-spicy-shrimp-over-basmati-rice/",
+      "id": "gid://shopify/Article/686798799149",
+      "handle": "instantpot-sweet-and-spicy-shrimp-over-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-wild-rice-chicken-dumplings/",
+      "id": "gid://shopify/Article/686798831917",
+      "handle": "instantpot-wild-rice-chicken-dumplings",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/instantpot-wild-rice-hamburger-soup/",
+      "id": "gid://shopify/Article/686798864685",
+      "handle": "instantpot-wild-rice-hamburger-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/italian-beef-and-rice-skillet/",
+      "id": "gid://shopify/Article/686798897453",
+      "handle": "italian-beef-and-rice-skillet",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/jalapeno-chicken-with-jasmine-rice-2/",
+      "id": "gid://shopify/Article/686798930221",
+      "handle": "jalapeno-chicken-with-jasmine-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/jalapeno-chicken-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686798962989",
+      "handle": "jalapeno-chicken-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/japanese-style-5-minute-egg-rice/",
+      "id": "gid://shopify/Article/686798995757",
+      "handle": "japanese-style-5-minute-egg-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/jasmine-rice-bowl-with-pan-fried-tofu-and-peanut-red-curry-sauce/",
+      "id": "gid://shopify/Article/686799028525",
+      "handle": "jasmine-rice-bowl-with-pan-fried-tofu-and-peanut-red-curry-sauce",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/katsudon-egg-rice-bowl/",
+      "id": "gid://shopify/Article/686799061293",
+      "handle": "katsudon-egg-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/kimchi-soup-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686799094061",
+      "handle": "kimchi-soup-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/korean-pork-and-rice-skillet/",
+      "id": "gid://shopify/Article/686799126829",
+      "handle": "korean-pork-and-rice-skillet",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/lemon-chicken-rice-salad/",
+      "id": "gid://shopify/Article/686799159597",
+      "handle": "lemon-chicken-rice-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/lemon-garlic-sausage-stir-fry-with-rice/",
+      "id": "gid://shopify/Article/686799192365",
+      "handle": "lemon-garlic-sausage-stir-fry-with-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/lemon-herb-rice-stuffed-tomatoes/",
+      "id": "gid://shopify/Article/686799225133",
+      "handle": "lemon-herb-rice-stuffed-tomatoes",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/lemongrass-ginger-chicken-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686799257901",
+      "handle": "lemongrass-ginger-chicken-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/louisiana-cajun-rice/",
+      "id": "gid://shopify/Article/686799290669",
+      "handle": "louisiana-cajun-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mediterranean-chicken-and-rice-skillet/",
+      "id": "gid://shopify/Article/686799323437",
+      "handle": "mediterranean-chicken-and-rice-skillet",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mediterranean-lamb-quinoa-burgers/",
+      "id": "gid://shopify/Article/686799356205",
+      "handle": "mediterranean-lamb-quinoa-burgers",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mediterranean-lemon-garlic-rice/",
+      "id": "gid://shopify/Article/686799388973",
+      "handle": "mediterranean-lemon-garlic-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mexican-beef-vegetable-rice-bowl/",
+      "id": "gid://shopify/Article/686799421741",
+      "handle": "mexican-beef-vegetable-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mexican-chicken-and-rice-delight/",
+      "id": "gid://shopify/Article/686799454509",
+      "handle": "mexican-chicken-and-rice-delight",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mexican-pork-black-bean-soup/",
+      "id": "gid://shopify/Article/686799487277",
+      "handle": "mexican-pork-black-bean-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/middle-eastern-inspired-macro-glow-bowl/",
+      "id": "gid://shopify/Article/686799520045",
+      "handle": "middle-eastern-inspired-macro-glow-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/middle-eastern-yogurt-chicken-with-cilantro-basmati-rice/",
+      "id": "gid://shopify/Article/686799552813",
+      "handle": "middle-eastern-yogurt-chicken-with-cilantro-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/mushroom-risotto/",
+      "id": "gid://shopify/Article/686799585581",
+      "handle": "mushroom-risotto",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/old-bay-tilapia-over-cabbage-and-basmati-brown-rice-2/",
+      "id": "gid://shopify/Article/686799618349",
+      "handle": "old-bay-tilapia-over-cabbage-and-basmati-brown-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/old-bay-tilapia-over-cabbage-and-basmati-brown-rice-3/",
+      "id": "gid://shopify/Article/686799651117",
+      "handle": "old-bay-tilapia-over-cabbage-and-basmati-brown-rice-3",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/old-bay-tilapia-over-cabbage-and-basmati-brown-rice/",
+      "id": "gid://shopify/Article/686799683885",
+      "handle": "old-bay-tilapia-over-cabbage-and-basmati-brown-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/old-fashion-chicken-celery-basmati-rice/",
+      "id": "gid://shopify/Article/686799716653",
+      "handle": "old-fashion-chicken-celery-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-beef-and-jasmine-rice/",
+      "id": "gid://shopify/Article/686799749421",
+      "handle": "one-pot-beef-and-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-cajun-sausage-and-rice/",
+      "id": "gid://shopify/Article/686799782189",
+      "handle": "one-pot-cajun-sausage-and-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-lemon-herb-chicken-rice/",
+      "id": "gid://shopify/Article/686799814957",
+      "handle": "one-pot-lemon-herb-chicken-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-smoked-chicken-and-basmati-rice/",
+      "id": "gid://shopify/Article/686799847725",
+      "handle": "one-pot-smoked-chicken-and-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-tomato-and-cannellini-herb-basmati-rice-2/",
+      "id": "gid://shopify/Article/686799880493",
+      "handle": "one-pot-tomato-and-cannellini-herb-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-tomato-and-cannellini-herb-basmati-rice/",
+      "id": "gid://shopify/Article/686799913261",
+      "handle": "one-pot-tomato-and-cannellini-herb-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/one-pot-tumeric-shrimp-and-rice/",
+      "id": "gid://shopify/Article/686799946029",
+      "handle": "one-pot-tumeric-shrimp-and-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/orange-chicken-jasmine-rice/",
+      "id": "gid://shopify/Article/686799978797",
+      "handle": "orange-chicken-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/peaches-n-cream-rice-pudding-pops/",
+      "id": "gid://shopify/Article/686800011565",
+      "handle": "peaches-n-cream-rice-pudding-pops",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/perfect-risotto/",
+      "id": "gid://shopify/Article/686800044333",
+      "handle": "perfect-risotto",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/pinto-bean-and-wild-rice-stew/",
+      "id": "gid://shopify/Article/686800077101",
+      "handle": "pinto-bean-and-wild-rice-stew",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/pumpkin-risotto-with-bacon-crumbles-and-fresh-sage/",
+      "id": "gid://shopify/Article/686800109869",
+      "handle": "pumpkin-risotto-with-bacon-crumbles-and-fresh-sage",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/ratatouille/",
+      "id": "gid://shopify/Article/686800142637",
+      "handle": "ratatouille",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/rosemary-chicken-with-sweet-potatoes-and-wild-rice/",
+      "id": "gid://shopify/Article/686800175405",
+      "handle": "rosemary-chicken-with-sweet-potatoes-and-wild-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/rum-raisin-rice-pudding/",
+      "id": "gid://shopify/Article/686800208173",
+      "handle": "rum-raisin-rice-pudding",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/salt-and-pepper-squid/",
+      "id": "gid://shopify/Article/686800240941",
+      "handle": "salt-and-pepper-squid",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/savory-pork-chops-with-black-eyed-peas-and-rice/",
+      "id": "gid://shopify/Article/686800273709",
+      "handle": "savory-pork-chops-with-black-eyed-peas-and-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/savory-tomato-shrimp-over-rice/",
+      "id": "gid://shopify/Article/686800306477",
+      "handle": "savory-tomato-shrimp-over-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/shrimp-and-vegetable-fried-rice-with-basmati-rice-and-quinoa/",
+      "id": "gid://shopify/Article/686800339245",
+      "handle": "shrimp-and-vegetable-fried-rice-with-basmati-rice-and-quinoa",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/shrimp-curry-with-basmati-rice-and-quinoa/",
+      "id": "gid://shopify/Article/686800372013",
+      "handle": "shrimp-curry-with-basmati-rice-and-quinoa",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/simple-sausage-and-potato-wild-rice-soup/",
+      "id": "gid://shopify/Article/686800404781",
+      "handle": "simple-sausage-and-potato-wild-rice-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/simple-spicy-tilapia-and-garlicky-basmati-rice/",
+      "id": "gid://shopify/Article/686800437549",
+      "handle": "simple-spicy-tilapia-and-garlicky-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/skillet-balsamic-glazed-pork-tenderloin-with-rice/",
+      "id": "gid://shopify/Article/686800470317",
+      "handle": "skillet-balsamic-glazed-pork-tenderloin-with-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/skillet-chicken-enchilada-quinoa/",
+      "id": "gid://shopify/Article/686800503085",
+      "handle": "skillet-chicken-enchilada-quinoa",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/skillet-orange-porkchop-basmati-rice/",
+      "id": "gid://shopify/Article/686800535853",
+      "handle": "skillet-orange-porkchop-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/slow-cooker-summer-wild-rice-corn-chowder/",
+      "id": "gid://shopify/Article/686800568621",
+      "handle": "slow-cooker-summer-wild-rice-corn-chowder",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/smoked-sausage-cabbage-soup-with-basmati-rice-2/",
+      "id": "gid://shopify/Article/686800601389",
+      "handle": "smoked-sausage-cabbage-soup-with-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/smoked-sausage-cabbage-soup-with-basmati-rice/",
+      "id": "gid://shopify/Article/686800634157",
+      "handle": "smoked-sausage-cabbage-soup-with-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/southwestern-chicken-rice/",
+      "id": "gid://shopify/Article/686800666925",
+      "handle": "southwestern-chicken-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spanish-chicken-and-rice-skillet/",
+      "id": "gid://shopify/Article/686800699693",
+      "handle": "spanish-chicken-and-rice-skillet",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spanish-chorizo-rice-soup/",
+      "id": "gid://shopify/Article/686800732461",
+      "handle": "spanish-chorizo-rice-soup",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spanish-lemony-tomato-rice-with-fried-eggs/",
+      "id": "gid://shopify/Article/686800765229",
+      "handle": "spanish-lemony-tomato-rice-with-fried-eggs",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spanish-pork-sausage-with-basmati-wild-rice/",
+      "id": "gid://shopify/Article/686800797997",
+      "handle": "spanish-pork-sausage-with-basmati-wild-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-beef-red-pepper-rice-bowl/",
+      "id": "gid://shopify/Article/686800830765",
+      "handle": "spicy-beef-red-pepper-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-chili-lime-shrimp-2/",
+      "id": "gid://shopify/Article/686800863533",
+      "handle": "spicy-chili-lime-shrimp-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-chili-lime-shrimp/",
+      "id": "gid://shopify/Article/686800896301",
+      "handle": "spicy-chili-lime-shrimp",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-cucumber-tomato-avocado-basmati-quinoa-salad/",
+      "id": "gid://shopify/Article/686800929069",
+      "handle": "spicy-cucumber-tomato-avocado-basmati-quinoa-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-ground-beef-brown-rice-chili/",
+      "id": "gid://shopify/Article/686800961837",
+      "handle": "spicy-ground-beef-brown-rice-chili",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-hearty-pork-loin-chop-over-jasmine-rice/",
+      "id": "gid://shopify/Article/686800994605",
+      "handle": "spicy-hearty-pork-loin-chop-over-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-korean-salmon-wild-rice-bowl/",
+      "id": "gid://shopify/Article/686801027373",
+      "handle": "spicy-korean-salmon-wild-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spicy-stir-fried-squid-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686801060141",
+      "handle": "spicy-stir-fried-squid-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/spinach-white-bean-sausage-soup-with-basmati-brown-rice/",
+      "id": "gid://shopify/Article/686801092909",
+      "handle": "spinach-white-bean-sausage-soup-with-basmati-brown-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sticky-pineapple-chicken/",
+      "id": "gid://shopify/Article/686801125677",
+      "handle": "sticky-pineapple-chicken",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/strawberry-rhubarb-rice-pudding/",
+      "id": "gid://shopify/Article/686801158445",
+      "handle": "strawberry-rhubarb-rice-pudding",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/strawberry-spinach-salad-with-basmati-quinoa/",
+      "id": "gid://shopify/Article/686801191213",
+      "handle": "strawberry-spinach-salad-with-basmati-quinoa",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/summer-chickpea-quinoa-rice-salad/",
+      "id": "gid://shopify/Article/686801223981",
+      "handle": "summer-chickpea-quinoa-rice-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/summer-strawberry-feta-basmati-quinoa-salad/",
+      "id": "gid://shopify/Article/686801256749",
+      "handle": "summer-strawberry-feta-basmati-quinoa-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-chili-shrimp-stir-fry/",
+      "id": "gid://shopify/Article/686801289517",
+      "handle": "sweet-chili-shrimp-stir-fry",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-garlic-pork-chops-over-brown-basmati-rice-2/",
+      "id": "gid://shopify/Article/686801322285",
+      "handle": "sweet-garlic-pork-chops-over-brown-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-garlic-pork-chops-over-brown-basmati-rice-3/",
+      "id": "gid://shopify/Article/686801355053",
+      "handle": "sweet-garlic-pork-chops-over-brown-basmati-rice-3",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-garlic-pork-chops-over-brown-basmati-rice/",
+      "id": "gid://shopify/Article/686801387821",
+      "handle": "sweet-garlic-pork-chops-over-brown-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-potato-broccoli-wild-rice-hash/",
+      "id": "gid://shopify/Article/686801420589",
+      "handle": "sweet-potato-broccoli-wild-rice-hash",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-sesame-ginger-bbq-chicken-over-jasmine-rice/",
+      "id": "gid://shopify/Article/686801453357",
+      "handle": "sweet-sesame-ginger-bbq-chicken-over-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-sour-pork-cabbage-stir-fry/",
+      "id": "gid://shopify/Article/686801486125",
+      "handle": "sweet-sour-pork-cabbage-stir-fry",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/sweet-spicy-lemongrass-shrimp/",
+      "id": "gid://shopify/Article/686801518893",
+      "handle": "sweet-spicy-lemongrass-shrimp",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/tangy-thai-beef-mint-salad-over-basmati-white-rice-2/",
+      "id": "gid://shopify/Article/686801551661",
+      "handle": "tangy-thai-beef-mint-salad-over-basmati-white-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/tangy-thai-beef-mint-salad-over-basmati-white-rice/",
+      "id": "gid://shopify/Article/686801584429",
+      "handle": "tangy-thai-beef-mint-salad-over-basmati-white-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/teriyaki-tofu-basmati-quinoa-bowl/",
+      "id": "gid://shopify/Article/686801617197",
+      "handle": "teriyaki-tofu-basmati-quinoa-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/tomato-and-egg-stir-fry-with-jasmine-rice/",
+      "id": "gid://shopify/Article/686801649965",
+      "handle": "tomato-and-egg-stir-fry-with-jasmine-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/tropical-coconut-rice-bowl/",
+      "id": "gid://shopify/Article/686801682733",
+      "handle": "tropical-coconut-rice-bowl",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/turkey-sweet-potato-chili-with-basmati-wild-rice-blend/",
+      "id": "gid://shopify/Article/686801715501",
+      "handle": "turkey-sweet-potato-chili-with-basmati-wild-rice-blend",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/turkey-sweet-potato-chili-with-quinoa/",
+      "id": "gid://shopify/Article/686801748269",
+      "handle": "turkey-sweet-potato-chili-with-quinoa",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/turmeric-lemon-herb-basmati-rice-with-sriracha-honey-salmon/",
+      "id": "gid://shopify/Article/686801781037",
+      "handle": "turmeric-lemon-herb-basmati-rice-with-sriracha-honey-salmon",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/unstuffed-basmati-bell-peppers/",
+      "id": "gid://shopify/Article/686801813805",
+      "handle": "unstuffed-basmati-bell-peppers",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/vegetarian-white-chili-with-basmati-wild-rice/",
+      "id": "gid://shopify/Article/686801846573",
+      "handle": "vegetarian-white-chili-with-basmati-wild-rice",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/vietnamese-shredded-chicken-salad/",
+      "id": "gid://shopify/Article/686801879341",
+      "handle": "vietnamese-shredded-chicken-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/vietnamese-tomato-pork-chop-with-brown-basmati-rice-2/",
+      "id": "gid://shopify/Article/686801912109",
+      "handle": "vietnamese-tomato-pork-chop-with-brown-basmati-rice-2",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/vietnamese-tomato-pork-chop-with-brown-basmati-rice-3/",
+      "id": "gid://shopify/Article/686801944877",
+      "handle": "vietnamese-tomato-pork-chop-with-brown-basmati-rice-3",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/vietnamese-tomato-pork-chop-with-brown-basmati-rice/",
+      "id": "gid://shopify/Article/686801977645",
+      "handle": "vietnamese-tomato-pork-chop-with-brown-basmati-rice",
+      "isPublished": false,
+      "duplicate_review_required": true
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/wild-rice-fall-harvest-kale-apple-salad/",
+      "id": "gid://shopify/Article/686802010413",
+      "handle": "wild-rice-fall-harvest-kale-apple-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    },
+    {
+      "source_url": "https://dellarice.com/recipe/wintry-citrus-rice-and-quinoa-salad/",
+      "id": "gid://shopify/Article/686802043181",
+      "handle": "wintry-citrus-rice-and-quinoa-salad",
+      "isPublished": false,
+      "duplicate_review_required": false
+    }
+  ],
+  "media": {
+    "source_urls": 441,
+    "ready_and_mapped": 441
+  },
+  "verification": {
+    "recipe_text_and_link_comparison": "181/181 passed after CDN substitution and HTML normalisation",
+    "source_metadata": "all 181 recipes; product/page write results succeeded, full readback pending",
+    "product_readback": "12 drafts, source prices, descriptions, weights and 34 gallery references ready"
+  },
+  "themes": {
+    "original_main": "189341139245",
+    "target": "189341761837",
+    "qa_copy": "189343858989",
+    "target_published": false
+  },
+  "remaining": [
+    "Authenticated WooCommerce exports: unpublished products/variants, SKUs, barcodes, stock, taxes, customers and consent, orders/refunds, reviews, coupons, shipping rules and integrations.",
+    "Policies and duplicate content review.",
+    "Responsive, interaction, accessibility and performance QA in progress.",
+    "PR merge and theme publication pending verification."
+  ]
+}
