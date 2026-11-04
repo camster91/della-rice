@@ -10,26 +10,10 @@
             "label": "Della All Natural Jasmine White Rice on a table",
             "asset_key": "home-imgContainer"
           }
-        },
-        "b1": {
-          "type": "slide",
-          "settings": {
-            "label": "Della All Natural rice collection",
-            "asset_key": "home-imgImageAllNaturalDellaRice"
-          }
-        },
-        "b2": {
-          "type": "slide",
-          "settings": {
-            "label": "Rice plants ready for harvest in Arkansas",
-            "asset_key": "home-imgImageRicePlantsReadyForHarvestInAnArkansasField"
-          }
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2"
+        "b0"
       ]
     },
     "benefits": {
