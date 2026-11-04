@@ -1,10 +1,12 @@
-<section class="della-hero" aria-labelledby="HeroTitle-{{ section.id }}">
+<section class="della-hero-shell" aria-labelledby="HeroTitle-{{ section.id }}">
+<div class="della-hero">
   <div class="della-hero-copy"><p class="della-eyebrow">{{ section.settings.eyebrow | escape }}</p><h1 class="della-serif" id="HeroTitle-{{ section.id }}">{{ section.settings.heading | escape }}</h1><p class="della-lead">{{ section.settings.text | escape }}</p><div class="della-actions"><a class="della-button" href="{{ routes.all_products_collection_url }}">Shop all rice</a><a class="della-button della-button--outline" href="/pages/about">Meet the family</a></div></div>
   <div class="della-hero-media">{% liquid
     assign block = section.blocks.first
     assign image_key = block.settings.asset_key | default: 'home-imgContainer'
     assign image_alt = block.settings.label | default: 'Della All Natural Jasmine White Rice on a table'
-  %}<div class="della-hero-image" {{ block.shopify_attributes }}>{% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 1800 | image_tag: loading: 'eager', sizes: '(min-width: 1600px) 800px, (min-width: 851px) 50vw, 100vw' }}{% else %}{% render 'della-image', key: image_key, alt: image_alt, eager: true %}{% endif %}</div><span class="della-hero-seal" aria-hidden="true"><span>The nicest</span><strong>Rice</strong><span>Since 1986</span></span></div>
+  %}<div class="della-hero-image" {{ block.shopify_attributes }}>{% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 1800 | image_tag: loading: 'eager', sizes: '(min-width: 1600px) 800px, (min-width: 1101px) 50vw, 100vw' }}{% else %}{% render 'della-image', key: image_key, alt: image_alt, eager: true %}{% endif %}</div><span class="della-hero-seal" aria-hidden="true"><span>The nicest</span><strong>Rice</strong><span>Since 1986</span></span></div>
+</div>
 </section>
 {% schema %}
 {"name":"Della hero","settings":[{"type":"text","id":"eyebrow","label":"Eyebrow","default":"The People’s Rice"},{"type":"text","id":"heading","label":"Heading","default":"From grain to table."},{"type":"textarea","id":"text","label":"Description","default":"An exquisite grain with exceptional flavor, fluffy texture, and thoughtful sourcing in the USA."}],"blocks":[{"type":"slide","name":"Hero image","settings":[{"type":"text","id":"label","label":"Image description","default":"Della rice"},{"type":"image_picker","id":"image","label":"Image"},{"type":"text","id":"asset_key","label":"Bundled image key","default":"home-imgContainer"}]}],"max_blocks":1,"presets":[{"name":"Della hero","blocks":[{"type":"slide"}]}]}
