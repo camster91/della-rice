@@ -1,5 +1,7 @@
 # Della migration verification
 
+Historical import checkpoint. See [launch-readiness.md](launch-readiness.md) for the current publication and commerce status.
+
 Destination: `della-rice-1hj0pj1j.myshopify.com`, USD. No other store was modified.
 
 ## Completed and verified
