@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "captured_source_urls": 221,
+  "product_rows": 12,
+  "product_image_rows": 34,
+  "category_counts": {
+    "All Natural": 4,
+    "Regenerative": 4,
+    "Organic": 4
+  },
+  "prices_currency": "USD",
+  "source_weights_grams": {
+    "794": 12
+  },
+  "capture_errors": 0,
+  "all_products_draft_and_unpublished": true,
+  "shopify_import_verified": false,
+  "limitations": [
+    "No destination write has occurred.",
+    "Inventory/SKUs/customers/orders require authenticated export.",
+    "Product media URLs are source references; Shopify image copy is unverified.",
+    "Animation rendering requires restored browser access."
+  ]
+}

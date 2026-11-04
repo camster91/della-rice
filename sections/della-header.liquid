@@ -14,11 +14,12 @@
       <a href="{{ pages['about'].url | default: '/pages/about' }}">About us</a>
       <a href="{{ pages['where-to-buy'].url | default: '/pages/where-to-buy' }}">Where to buy</a>
       <a href="{{ pages['wholesale'].url | default: '/pages/wholesale' }}">Wholesale</a>
+      {% if blogs.recipes.articles_count > 0 %}<a href="{{ blogs.recipes.url }}">Recipes</a>{% endif %}
       <a href="{{ pages['contact'].url | default: '/pages/contact' }}">Contact</a>
     {% endif %}
   </nav>
   <div class="della-header-actions"><a href="{{ routes.search_url }}" aria-label="Search the store" class="della-search-link">Search</a><a href="{{ routes.cart_url }}" id="cart-icon-bubble" class="della-bag" aria-label="Bag, {{ cart.item_count }} items">{% render 'della-image', key: 'home-imgImage', alt: '', eager: true %}<span>Bag ({{ cart.item_count }})</span></a></div>
-  <details class="della-mobile-nav"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="{{ routes.all_products_collection_url }}">Shop all rice</a><a href="/pages/about">About us</a><a href="/pages/where-to-buy">Where to buy</a><a href="/pages/wholesale">Wholesale</a><a href="/pages/contact">Contact us</a><a href="{{ routes.search_url }}">Search</a></nav></details>
+  <details class="della-mobile-nav"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="{{ routes.all_products_collection_url }}">Shop all rice</a><a href="/pages/about">About us</a><a href="/pages/where-to-buy">Where to buy</a><a href="/pages/wholesale">Wholesale</a>{% if blogs.recipes.articles_count > 0 %}<a href="{{ blogs.recipes.url }}">Recipes</a>{% endif %}<a href="/pages/contact">Contact us</a><a href="{{ routes.search_url }}">Search</a></nav></details>
 </header>
 {% schema %}
 {"name":"Della header","settings":[{"type":"text","id":"announcement","label":"Announcement","default":"The People’s Rice · Family-owned since 1986 · Ready in 20 minutes"},{"type":"image_picker","id":"logo","label":"Logo"},{"type":"link_list","id":"menu","label":"Main menu"}]}
