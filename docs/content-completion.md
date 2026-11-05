@@ -18,3 +18,11 @@ Builder executed successfully, all 181 receipt IDs matched uniquely, every prepa
 ## Execution still required
 
 Authenticate Shopify specifically for Della. Read existing articles and compare to the original import before updating so later human edits are preserved. Apply, read back and publish the prepared content; verify videos, media, mobile/desktop recipe layouts, blog pagination and navigation. Review duplicate images before deciding whether to consolidate URLs. Verify the three remaining hidden legacy pages against the redesigned About/catalogue/wholesale equivalents. Install and test redirects only after destination validation. Authenticated WordPress content outside the public capture remains unknown until access is restored.
+
+## Shopify progress and next import
+
+All 181 imported recipe articles were verified visible in the password-protected store. The prepared article body edits are still pending. Four legacy paths were tested in Chrome: `/recipes`, `/about-us`, `/contact-us`, and `/find-us`. Shopify saved a fifth rule for `/shop`, but the storefront rendered the homepage there. Keep that path out of the bulk upload while it is investigated.
+
+Import [shopify-redirects-pending.csv](../migration/shopify-redirects-pending.csv) in Shopify under **Content → Menus → URL redirects → Import**. It contains 204 unique source paths, excludes the five already saved rules, and contains no redirect chains within the batch. After import, check the processed count and sample a recipe, a product and a policy URL on the Shopify domain.
+
+Keep `/regenfacts`, `/ricefacts` and `/sellsheets` out of this import. The first two reuse About content and the last contains static prices and merchandise headings. The WordPress About capture also lists Dalton Drye and gives Tammy Roberts a different role than the current Shopify About page. Confirm staff details before consolidating the legacy About copy.
