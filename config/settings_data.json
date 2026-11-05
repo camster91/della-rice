@@ -1,64 +1,15 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "logo_width": 90,
-    "customer_account_menu": "customer-account-main-menu",
-    "color_schemes": {
-      "scheme-1": {
-        "settings": {
-          "background": "#fff8e7",
-          "background_gradient": "",
-          "text": "#221f20",
-          "button": "#221f20",
-          "button_label": "#fff8e7",
-          "secondary_button_label": "#221f20",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-2": {
-        "settings": {
-          "background": "#f1e4c8",
-          "background_gradient": "",
-          "text": "#221f20",
-          "button": "#221f20",
-          "button_label": "#fff8e7",
-          "secondary_button_label": "#221f20",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-3": {
-        "settings": {
-          "background": "#313834",
-          "background_gradient": "",
-          "text": "#fff4af",
-          "button": "#fff4af",
-          "button_label": "#221f20",
-          "secondary_button_label": "#fff4af",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-4": {
-        "settings": {
-          "background": "#221f20",
-          "background_gradient": "",
-          "text": "#fff8e7",
-          "button": "#fff8e7",
-          "button_label": "#221f20",
-          "secondary_button_label": "#fff8e7",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-5": {
-        "settings": {
-          "background": "#cce8f2",
-          "background_gradient": "",
-          "text": "#221f20",
-          "button": "#221f20",
-          "button_label": "#fff8e7",
-          "secondary_button_label": "#221f20",
-          "shadow": "#121212"
-        }
-      }
-    },
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -157,14 +108,14 @@
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_twitter_link": "",
     "social_facebook_link": "",
-    "social_pinterest_link": "",
     "social_instagram_link": "",
-    "social_tiktok_link": "",
-    "social_tumblr_link": "",
-    "social_snapchat_link": "",
     "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -175,6 +126,9 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "customer_account_menu": "customer-account-main-menu",
+    "della_heading_font_file": "New_Spirit_Medium.otf",
+    "della_enable_motion": true,
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -189,7 +143,64 @@
         }
       }
     },
-    "della_enable_motion": true
+    "content_for_index": [],
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#fff8e7",
+          "background_gradient": "",
+          "text": "#221f20",
+          "button": "#221f20",
+          "button_label": "#fff8e7",
+          "secondary_button_label": "#221f20",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#f1e4c8",
+          "background_gradient": "",
+          "text": "#221f20",
+          "button": "#221f20",
+          "button_label": "#fff8e7",
+          "secondary_button_label": "#221f20",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#313834",
+          "background_gradient": "",
+          "text": "#fff4af",
+          "button": "#fff4af",
+          "button_label": "#221f20",
+          "secondary_button_label": "#fff4af",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#221f20",
+          "background_gradient": "",
+          "text": "#fff8e7",
+          "button": "#fff8e7",
+          "button_label": "#221f20",
+          "secondary_button_label": "#fff8e7",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#cce8f2",
+          "background_gradient": "",
+          "text": "#221f20",
+          "button": "#221f20",
+          "button_label": "#fff8e7",
+          "secondary_button_label": "#221f20",
+          "shadow": "#121212"
+        }
+      }
+    }
   },
   "presets": {
     "Dawn": {
