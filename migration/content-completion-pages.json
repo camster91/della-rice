@@ -1,0 +1,198 @@
+[
+  {
+    "source_url": "https://dellarice.com/",
+    "destination_path": "/",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 9328,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/about-us-markup-revision-draft/",
+    "destination_path": "/pages/about",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 1456,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/about-us/",
+    "destination_path": "/pages/about",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 1307,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/about/",
+    "destination_path": "/pages/about",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 8228,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/cart/",
+    "destination_path": null,
+    "action": "exclude_dynamic_or_review_mockup",
+    "captured_html_bytes": 660,
+    "note": "Native commerce/account functionality replaces source dynamic page."
+  },
+  {
+    "source_url": "https://dellarice.com/checkout/",
+    "destination_path": null,
+    "action": "exclude_dynamic_or_review_mockup",
+    "captured_html_bytes": 660,
+    "note": "Native commerce/account functionality replaces source dynamic page."
+  },
+  {
+    "source_url": "https://dellarice.com/contact-faq-markup-revision-draft/",
+    "destination_path": "/pages/contact",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 835,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/contact-us/",
+    "destination_path": "/pages/contact",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 843,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/find-us/",
+    "destination_path": "/pages/where-to-buy",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 16,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/my-account/",
+    "destination_path": null,
+    "action": "exclude_dynamic_or_review_mockup",
+    "captured_html_bytes": 34,
+    "note": "Native commerce/account functionality replaces source dynamic page."
+  },
+  {
+    "source_url": "https://dellarice.com/natural-facts/",
+    "destination_path": "/pages/natural-facts",
+    "action": "create_draft_page",
+    "captured_html_bytes": 2229,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/new-home-markup-revision-draft/",
+    "destination_path": "/",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 6575,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/new-home/",
+    "destination_path": "/",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 4512,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/organic-facts/",
+    "destination_path": "/pages/organic-facts",
+    "action": "create_draft_page",
+    "captured_html_bytes": 2326,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/privacy/",
+    "destination_path": "/policies/privacy-policy",
+    "action": "merchant_review_policy",
+    "captured_html_bytes": 3779,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/product-markup-revision-draft/",
+    "destination_path": null,
+    "action": "exclude_dynamic_or_review_mockup",
+    "captured_html_bytes": 4955,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/refund_returns/",
+    "destination_path": "/policies/refund-policy",
+    "action": "merchant_review_policy",
+    "captured_html_bytes": 2668,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/regenerative-facts/",
+    "destination_path": "/pages/regenerative-facts",
+    "action": "create_draft_page",
+    "captured_html_bytes": 2483,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/regenfacts/",
+    "destination_path": "/pages/regenfacts",
+    "action": "create_draft_page",
+    "captured_html_bytes": 6636,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/ricefacts/",
+    "destination_path": "/pages/ricefacts",
+    "action": "create_draft_page",
+    "captured_html_bytes": 6291,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/sellsheets/",
+    "destination_path": "/pages/sellsheets",
+    "action": "create_draft_page",
+    "captured_html_bytes": 3667,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/store-markup-revision-draft/",
+    "destination_path": "/collections/all",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 5008,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/store/",
+    "destination_path": "/collections/all",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 3704,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/terms/",
+    "destination_path": "/policies/terms-of-service",
+    "action": "merchant_review_policy",
+    "captured_html_bytes": 4580,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/where-to-buy-markup-revision-draft/",
+    "destination_path": "/pages/where-to-buy",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 1186,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/where-to-buy/",
+    "destination_path": "/pages/where-to-buy",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 1189,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/wholesale-markup-revision-draft/",
+    "destination_path": "/pages/wholesale",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 970,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  },
+  {
+    "source_url": "https://dellarice.com/wholesale/",
+    "destination_path": "/pages/wholesale",
+    "action": "already_recreated_design",
+    "captured_html_bytes": 550,
+    "note": "Preserve source capture; verify unique copy against the destination before closing."
+  }
+]
