@@ -7,6 +7,20 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
+    {%- unless request.design_mode -%}
+      <script>
+        // Shopify can render the homepage at this legacy WordPress path.
+        if (/^\/shop\/?$/.test(window.location.pathname)) {
+          const catalogue = new URL({{ routes.all_products_collection_url | json }}, window.location.origin);
+          catalogue.search = window.location.search;
+          catalogue.hash = window.location.hash;
+          if (catalogue.pathname !== window.location.pathname) {
+            window.location.replace(catalogue.href);
+          }
+        }
+      </script>
+    {%- endunless -%}
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
