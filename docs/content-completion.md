@@ -35,3 +35,9 @@ WooCommerce shows 50 customers and 57 orders: 40 Processing, 16 Completed, and o
 - Della needs to confirm the old over-$25 shipping offer. Shopify currently shows USD 8 Standard, free from USD 70, and USD 15 Express. Verify shipping coverage and tax settings with the approved policy.
 - Shopify Customer Events showed no connected pixels. The old WordPress Rank Math analytics page showed a connection prompt. Identify the intended analytics property, verify consent, and confirm purchase tracking with a test order.
 - Get final launch approval after the above checks. Keep the legacy store available as a source and rollback reference through cutover.
+
+## Plan from Shopify readback
+
+Use `python migration/plan-recipe-patches.py /private/article-snapshot.json /private/recipe-patch-plan.json` once a fresh authenticated readback is available. The snapshot is an object with `store` and `articles`. Each article needs `id` (matching the receipt), `handle`, `blog_handle`, `title`, `updated_at` and `body_html`.
+
+The planner edits current article HTML in place. It fills missing Shopify CDN image alt text, rewrites links covered by the imported redirect batch, and adds missing captured short YouTube links. It leaves existing descriptions, editor copy, and visibility intact. It holds missing or mismatched records. Before applying a job, re-read the current article and compare both its update time and body hash with the expected values. Regenerate the plan if either changed. The planner does not call Shopify or publish anything.
