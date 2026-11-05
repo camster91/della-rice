@@ -1,0 +1,122 @@
+[
+  {
+    "text_sha256": "da3bedd3ab68b08c98f4ecf1ec6843def0885a38262cd35fc1f20ea5a6ac7579",
+    "source_urls": [
+      "https://dellarice.com/recipe/3-beans-and-brown-basmati-rice-salad-2/",
+      "https://dellarice.com/recipe/3-beans-and-brown-basmati-rice-salad/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "64489151d958bf8b227c6487d62686aca94c37b72b60d09e64ea2d339b30e39c",
+    "source_urls": [
+      "https://dellarice.com/recipe/cajun-swai-over-salad-with-brown-basmati-rice-2/",
+      "https://dellarice.com/recipe/cajun-swai-over-salad-with-brown-basmati-rice-3/",
+      "https://dellarice.com/recipe/cajun-swai-over-salad-with-brown-basmati-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "c7d5c27b02af906c235a2c60abf7eb5c59e00f38f75c82c8aacb2231838e277a",
+    "source_urls": [
+      "https://dellarice.com/recipe/chicken-and-mushroom-rice-casserole-2/",
+      "https://dellarice.com/recipe/chicken-and-mushroom-rice-casserole/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "2438e519400375e779102027a562b92c4a1c861ec9306b4542d5c54fca9a047e",
+    "source_urls": [
+      "https://dellarice.com/recipe/filipino-styled-bbq-skewers-over-salad-and-jasmine-rice-2/",
+      "https://dellarice.com/recipe/filipino-styled-bbq-skewers-over-salad-and-jasmine-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "8337c0233a846ec8cd232d8e22bc19970c8eb1e1f9d4a74a80a3ad849db84a07",
+    "source_urls": [
+      "https://dellarice.com/recipe/honey-garlic-pork-chops-over-brown-basmati-rice-2/",
+      "https://dellarice.com/recipe/honey-garlic-pork-chops-over-brown-basmati-rice-3/",
+      "https://dellarice.com/recipe/honey-garlic-pork-chops-over-brown-basmati-rice/",
+      "https://dellarice.com/recipe/sweet-garlic-pork-chops-over-brown-basmati-rice-2/",
+      "https://dellarice.com/recipe/sweet-garlic-pork-chops-over-brown-basmati-rice-3/",
+      "https://dellarice.com/recipe/sweet-garlic-pork-chops-over-brown-basmati-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "7f3d0f6c873e50001cb353664cf4884d020aafdcc2840c0211ef6252c8c41dc7",
+    "source_urls": [
+      "https://dellarice.com/recipe/honey-sriracha-chicken-2/",
+      "https://dellarice.com/recipe/honey-sriracha-chicken/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "b18f2a52ece40b15db7603fa685bd82cea563c0d76efd3c7aa2d73119eb8f867",
+    "source_urls": [
+      "https://dellarice.com/recipe/instant-japanese-curry-with-basmati-rice-2/",
+      "https://dellarice.com/recipe/instant-japanese-curry-with-basmati-rice-3/",
+      "https://dellarice.com/recipe/instant-japanese-curry-with-basmati-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "79d7acc999535619693eb20429849228bb77685dcfa22f9f83fcdf6f577db55e",
+    "source_urls": [
+      "https://dellarice.com/recipe/jalapeno-chicken-with-jasmine-rice-2/",
+      "https://dellarice.com/recipe/jalapeno-chicken-with-jasmine-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "ca76d86a77c41d0db77150c7d8eb8aa8f5ef274b00115db7669490b20d17122c",
+    "source_urls": [
+      "https://dellarice.com/recipe/old-bay-tilapia-over-cabbage-and-basmati-brown-rice-2/",
+      "https://dellarice.com/recipe/old-bay-tilapia-over-cabbage-and-basmati-brown-rice-3/",
+      "https://dellarice.com/recipe/old-bay-tilapia-over-cabbage-and-basmati-brown-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "f5348cadbecc2d1c5799fcbccd6eebb301488697a3570040262dd30c545eb15b",
+    "source_urls": [
+      "https://dellarice.com/recipe/one-pot-tomato-and-cannellini-herb-basmati-rice-2/",
+      "https://dellarice.com/recipe/one-pot-tomato-and-cannellini-herb-basmati-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "a5d7903510960e340d1069a54edb3013da605d313701e6e46608885162b7a0de",
+    "source_urls": [
+      "https://dellarice.com/recipe/smoked-sausage-cabbage-soup-with-basmati-rice-2/",
+      "https://dellarice.com/recipe/smoked-sausage-cabbage-soup-with-basmati-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "54a3649e532ddbbe8108736a0ebad392b59911ea986ff3dd6806d0f62d36db50",
+    "source_urls": [
+      "https://dellarice.com/recipe/spicy-chili-lime-shrimp-2/",
+      "https://dellarice.com/recipe/spicy-chili-lime-shrimp/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "381660f68705c3eb935c662bb42a4413ad1598204a2c28f3ea75fb5eff5ee2b4",
+    "source_urls": [
+      "https://dellarice.com/recipe/tangy-thai-beef-mint-salad-over-basmati-white-rice-2/",
+      "https://dellarice.com/recipe/tangy-thai-beef-mint-salad-over-basmati-white-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  },
+  {
+    "text_sha256": "799d9b6e5ce2d5b2a8dcc7482148801acb766ca25f76c7aba7147f6d14f2051b",
+    "source_urls": [
+      "https://dellarice.com/recipe/vietnamese-tomato-pork-chop-with-brown-basmati-rice-2/",
+      "https://dellarice.com/recipe/vietnamese-tomato-pork-chop-with-brown-basmati-rice-3/",
+      "https://dellarice.com/recipe/vietnamese-tomato-pork-chop-with-brown-basmati-rice/"
+    ],
+    "decision": "Preserve all imported articles; repeated text does not prove images are interchangeable."
+  }
+]
