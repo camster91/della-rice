@@ -41,3 +41,13 @@ WooCommerce shows 50 customers and 57 orders: 40 Processing, 16 Completed, and o
 Use `python migration/plan-recipe-patches.py /private/article-snapshot.json /private/recipe-patch-plan.json` once a fresh authenticated readback is available. The snapshot is an object with `store` and `articles`. Each article needs `id` (matching the receipt), `handle`, `blog_handle`, `title`, `updated_at` and `body_html`.
 
 The planner edits current article HTML in place. It fills missing Shopify CDN image alt text, rewrites links covered by the imported redirect batch, and adds missing captured short YouTube links. It leaves existing descriptions, editor copy, and visibility intact. It holds missing or mismatched records. Before applying a job, re-read the current article and compare both its update time and body hash with the expected values. Regenerate the plan if either changed. The planner does not call Shopify or publish anything.
+
+## Additional verified Chrome edits
+
+The current Shopify bodies were edited in place and the storefront readback confirmed two image descriptions and the existing video link on each article:
+
+- 686796177709, 3 Beans and Brown Basmati Rice Salad (unsuffixed URL)
+- 686796210477, Asian-inspired Rice and Beef Skillet
+- 686796276013, Beef and Broccoli Stir-Fry
+
+Basmati Mushroom Rice (686796243245) required no change in this pass. Subsequent plans should use fresh readback and skip attributes already set.
