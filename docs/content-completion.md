@@ -51,3 +51,16 @@ The current Shopify bodies were edited in place and the storefront readback conf
 - 686796276013, Beef and Broccoli Stir-Fry
 
 Basmati Mushroom Rice (686796243245) required no change in this pass. Subsequent plans should use fresh readback and skip attributes already set.
+
+## Run the remaining recipes in batches
+
+Use an authorized Della Admin API token provided through the local environment as `DELLA_SHOPIFY_ADMIN_TOKEN`. Keep the token, snapshots, and plans in a private workspace outside GitHub.
+
+1. Run `python migration/run-recipe-patches.py snapshot /private/della-snapshot.json`.
+2. Run `python migration/plan-recipe-patches.py /private/della-snapshot.json /private/della-plan.json`.
+3. Run `python migration/run-recipe-patches.py apply /private/della-plan.json` to recheck the plan without writes.
+4. Run `python migration/run-recipe-patches.py apply /private/della-plan.json --write --limit 20` for the first batch. Repeat until no writes remain. Regenerate the plan for held articles. Pause concurrent article editing during a write batch because the read check and write are separate API calls.
+
+The runner verifies the target shop, checks each article against the import receipt and current body/timestamp, changes only the body, and reads each save back. A retry skips an article if the requested body is already present. The initial checks used simulated responses for dry run, stale edit protection, the write limit, readback, and retry. The Shopify connector requires authentication and no Della token is configured in this workspace, so the runner has not been used on the store.
+
+Shopify references: [article](https://shopify.dev/docs/api/admin-graphql/2026-10/queries/article), [articleUpdate](https://shopify.dev/docs/api/admin-graphql/2026-10/mutations/articleUpdate).
