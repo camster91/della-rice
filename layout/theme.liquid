@@ -278,6 +278,23 @@
       }
     {% endstyle %}
 
+    {%- if settings.della_heading_font_file != blank -%}
+      {% style %}
+        @font-face {
+          font-family: 'New Spirit';
+          src: url({{ settings.della_heading_font_file | strip | file_url | json }});
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+        }
+
+        :root {
+          --della-heading-family: 'New Spirit', DellaDisplay, Georgia, serif;
+          --della-heading-weight: 500;
+        }
+      {% endstyle %}
+    {%- endif -%}
+
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'della.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'della.js' | asset_url }}" defer="defer"></script>
