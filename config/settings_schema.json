@@ -1468,6 +1468,17 @@
     ]
   },
   {
+    "name": "Della typography",
+    "settings": [
+      {
+        "type": "text",
+        "id": "della_heading_font_file",
+        "label": "New Spirit Medium file name",
+        "info": "Upload the font to Shopify Files, then enter its exact file name including the extension."
+      }
+    ]
+  },
+  {
     "name": "Della motion",
     "settings": [
       {
