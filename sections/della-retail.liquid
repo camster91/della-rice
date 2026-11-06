@@ -1,4 +1,26 @@
-<section id="store-finder" class="della-retail della-pad"><div><p class="della-eyebrow">Retail</p><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape }}</p><a class="della-button" href="{{ routes.all_products_collection_url }}">Shop online</a></div><div class="della-retail-panel">{% if section.settings.locator_url != blank %}<h3>Find a retailer</h3><p>Check nearby retailers and availability through our store finder.</p><a class="della-button" href="{{ section.settings.locator_url }}">Open store finder</a>{% else %}<h3>Looking for Della near you?</h3><p>Contact our team for retailer information. Please check availability with the retailer before visiting.</p><a class="della-button della-button--outline" href="/pages/contact">Ask our team</a>{% endif %}</div></section>
+<section id="store-finder" class="della-retail della-pad">
+  <div>
+    <p class="della-eyebrow">Retail</p>
+    <h2>{{ section.settings.heading | escape }}</h2>
+    <p>{{ section.settings.text | escape }}</p>
+    <a class="della-button" href="{{ routes.all_products_collection_url }}">Shop Della Rice</a>
+  </div>
+  <div class="della-retail-panel">
+    {% if section.settings.locator_url != blank %}
+      <h3>Find a retailer</h3>
+      <p>Check nearby retailers and availability through our store finder.</p>
+      <a class="della-button" href="{{ section.settings.locator_url }}">Open store finder</a>
+    {% else %}
+      <h3>Prefer to shop in person?</h3>
+      <p>Tell us your city or ZIP code and the variety you’re looking for. Our team can help you check for local options.</p>
+      <a class="della-button della-button--outline" href="/pages/contact">Ask about local availability</a>
+    {% endif %}
+    {% assign catalogue = pages['wholesale-catalogue'] %}
+    {% if catalogue != blank %}
+      <p><strong>Buying for a business?</strong> Browse our rice varieties and product sell sheets in the <a href="{{ catalogue.url }}">wholesale catalogue</a>.</p>
+    {% endif %}
+  </div>
+</section>
 {% schema %}
-{"name":"Della retail finder","settings":[{"type":"text","id":"heading","label":"Heading","default":"Retail and online shopping"},{"type":"textarea","id":"text","label":"Description","default":"Shop our rice online or ask our team about retail options near you."},{"type":"url","id":"locator_url","label":"Verified store finder URL","info":"Add the approved retailer search URL. Without it, visitors are directed to the contact form."}],"presets":[{"name":"Della retail finder"}]}
+{"name":"Della retail finder","settings":[{"type":"text","id":"heading","label":"Heading","default":"Find Us"},{"type":"textarea","id":"text","label":"Description","default":"Shop the Della Rice collection online."},{"type":"url","id":"locator_url","label":"Verified store finder URL","info":"Add the approved retailer search URL. Without it, visitors are directed to the contact form."}],"presets":[{"name":"Della retail finder"}]}
 {% endschema %}
