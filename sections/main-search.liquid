@@ -44,9 +44,16 @@
 </style>
 
 {%- liquid
+  assign article_search = false
+  if search.types.size == 1 and search.types contains 'article'
+    assign article_search = true
+  endif
   assign sort_by = search.sort_by | default: search.default_sort_by
   assign terms = search.terms | escape
   assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  if article_search
+    assign search_url = search_url | append: '&type=article'
+  endif
 -%}
 
 {%- style -%}
@@ -74,7 +81,7 @@
         {%- endif -%}
       </h1>
       <div class="template-search__search">
-        {%- if settings.predictive_search_enabled -%}
+        {%- if settings.predictive_search_enabled and article_search == false -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
         <main-search>
@@ -87,7 +94,7 @@
                 name="q"
                 value="{{ search.terms | escape }}"
                 placeholder="{{ 'general.search.search' | t }}"
-                {%- if settings.predictive_search_enabled -%}
+                {%- if settings.predictive_search_enabled and article_search == false -%}
                   role="combobox"
                   aria-expanded="false"
                   aria-owns="predictive-search-results"
@@ -102,8 +109,11 @@
               >
               <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
               <input name="options[prefix]" type="hidden" value="last">
+              {%- if article_search -%}
+                <input type="hidden" name="type" value="article">
+              {%- endif -%}
 
-              {%- if settings.predictive_search_enabled -%}
+              {%- if settings.predictive_search_enabled and article_search == false -%}
                 <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
                   {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
                 </div>
@@ -128,7 +138,7 @@
             </div>
           </form>
         </main-search>
-        {%- if settings.predictive_search_enabled -%}
+        {%- if settings.predictive_search_enabled and article_search == false -%}
           </predictive-search>
         {%- endif -%}
       </div>

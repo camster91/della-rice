@@ -16,8 +16,8 @@
           "type": "path",
           "settings": {
             "label": "Retail",
-            "heading": "Find Della near you",
-            "text": "Find grocery and online retail options.",
+            "heading": "Retail and online shopping",
+            "text": "Shop online or ask our team about local retailers.",
             "button": "Explore retail",
             "url": "#store-finder",
             "tone": "cream"

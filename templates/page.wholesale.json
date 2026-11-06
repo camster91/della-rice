@@ -42,7 +42,7 @@
     "contact": {
       "type": "della-cta",
       "settings": {
-        "eyebrow": "We\u2019re here to help",
+        "eyebrow": "We’re here to help",
         "heading": "Questions about foodservice, private label or bulk orders?",
         "tone": "tan"
       },
@@ -58,10 +58,33 @@
       "block_order": [
         "b0"
       ]
+    },
+    "catalogue": {
+      "type": "della-cta",
+      "settings": {
+        "eyebrow": "For retail buyers",
+        "heading": "Explore the Della Rice catalogue",
+        "text": "Browse the range and open the sell sheets for product details.",
+        "tone": "yellow",
+        "inline": true
+      },
+      "blocks": {
+        "catalogue_link": {
+          "type": "button",
+          "settings": {
+            "label": "View wholesale catalogue",
+            "url": "/pages/wholesale-catalogue"
+          }
+        }
+      },
+      "block_order": [
+        "catalogue_link"
+      ]
     }
   },
   "order": [
     "heading",
+    "catalogue",
     "platforms",
     "contact"
   ]
