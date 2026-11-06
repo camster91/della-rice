@@ -19,6 +19,12 @@
 
 {%- if article and article != empty -%}
   {%- liquid
+    assign title_in_inner_card = false
+    if settings.blog_card_style == 'standard'
+      if article.image == blank or show_image != true
+        assign title_in_inner_card = true
+      endif
+    endif
     assign ratio = 1
     if media_aspect_ratio != null
       assign ratio = media_aspect_ratio
@@ -76,11 +82,13 @@
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
-            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
-              <a href="{{ article.url }}" class="full-unstyled-link">
-                {{ article.title | truncate: 50 | escape }}
-              </a>
-            </h3>
+            {%- if title_in_inner_card -%}
+              <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+                <a href="{{ article.url }}" class="full-unstyled-link">
+                  {{ article.title | escape }}
+                </a>
+              </h3>
+            {%- endif -%}
             <div class="article-card__info caption-with-letter-spacing h5">
               {%- if show_date -%}
                 <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -115,11 +123,13 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
-            <a href="{{ article.url }}" class="full-unstyled-link">
-              {{ article.title | truncate: 50 | escape }}
-            </a>
-          </h3>
+          {%- unless title_in_inner_card -%}
+            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+              <a href="{{ article.url }}" class="full-unstyled-link">
+                {{ article.title | escape }}
+              </a>
+            </h3>
+          {%- endunless -%}
           <div class="article-card__info caption-with-letter-spacing h5">
             {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>

@@ -8,6 +8,18 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .recipe-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 56rem;
+    margin-bottom: 3rem;
+  }
+
+  .recipe-search .field {
+    flex: 1 1 22rem;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -16,11 +28,29 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
+{%- liquid
+  assign articles_per_page = 6
+  if blog.handle == 'recipes'
+    assign articles_per_page = 12
+  endif
+-%}
+
+{%- paginate blog.articles by articles_per_page -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1>
+
+    {%- if blog.handle == 'recipes' -%}
+      <form action="{{ routes.search_url }}" method="get" role="search" class="recipe-search">
+        <input type="hidden" name="type" value="article">
+        <div class="field">
+          <input class="field__input" type="search" id="RecipeSearch-{{ section.id }}" name="q" placeholder="Search recipes" required>
+          <label class="field__label" for="RecipeSearch-{{ section.id }}">Search recipes</label>
+        </div>
+        <button class="button" type="submit">Search</button>
+      </form>
+    {%- endif -%}
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
