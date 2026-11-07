@@ -1,0 +1,12 @@
+{
+  "execution_status": "prepared_not_applied",
+  "store": "della-rice-1hj0pj1j.myshopify.com",
+  "article_updates": 181,
+  "distinct_recipe_texts": 159,
+  "duplicate_text_groups": 14,
+  "source_page_records": 28,
+  "rewritten_image_count": 402,
+  "unresolved_source_links": [],
+  "unresolved_link_occurrences": [],
+  "next_action": "Authenticate Della Shopify, read existing article bodies to detect later edits, apply updates, read back, publish and validate redirects. Do not overwrite newer edits."
+}
