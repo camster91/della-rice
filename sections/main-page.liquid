@@ -32,7 +32,18 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-    {% if page.handle == 'organic-facts' %}{% assign organic_paragraphs = reviewed_page_content | split: '</p>' %}{% for organic_paragraph in organic_paragraphs %}{% if organic_paragraph != blank %}{{ organic_paragraph }}</p>{% if organic_paragraph contains 'Explore our Organic Jasmine' %}<p class="della-organic-storage"><strong>Organic product tip:</strong> Store uncooked organic rice in a tightly sealed, freezer-safe container in the freezer to help prevent pantry insects.</p>{% endif %}{% endif %}{% endfor %}{% else %}{{ reviewed_page_content }}{% endif %}
+    {% if page.handle == 'organic-facts' %}
+      {% assign organic_paragraphs = reviewed_page_content | split: '</p>' %}
+      {% for organic_paragraph in organic_paragraphs %}
+        {% if organic_paragraph contains 'Explore our Organic Jasmine' %}
+          {% assign explore_paragraph = organic_paragraph | append: '</p>' %}
+          {% capture explore_with_storage %}{{ explore_paragraph }}<p class="della-organic-storage"><strong>Organic product tip:</strong> Store uncooked organic rice in a tightly sealed, freezer-safe container in the freezer to help prevent pantry insects.</p>{% endcapture %}
+          {% assign reviewed_page_content = reviewed_page_content | replace: explore_paragraph, explore_with_storage %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {{ reviewed_page_content }}
   </div>
 </div>
 
