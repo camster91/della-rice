@@ -1,0 +1,30 @@
+.della-recipe-page .article-template__title{font-size:clamp(32px,4vw,56px);line-height:1.12;max-width:1000px;margin:0 0 24px;overflow-wrap:anywhere}
+.della-recipe-page>header{padding-top:48px}
+.della-recipe-page .article-template__content{max-width:1200px;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.7}
+.della-recipe-page>header,.della-recipe-page .article-template__social-sharing{max-width:1200px}
+.della-recipe-page .article-template__social-sharing{margin-top:0;margin-bottom:24px}
+.della-recipe-jumps{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 28px}
+.della-recipe-jumps a{display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;border:1px solid currentColor;border-radius:30px;font-size:16px;font-weight:700;text-decoration:none;color:inherit}
+.della-recipe-jumps a:hover{background:#f1e4c8}
+.della-recipe-jumps a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.della-recipe-intro{margin-bottom:24px}
+.della-recipe-intro h2{font-size:24px;line-height:1.3;margin:0 0 20px}
+.della-recipe-intro h3,.della-recipe-intro h4{font:700 16px/1.5 Arial,Helvetica,sans-serif;display:inline-block;margin:0 24px 12px 0}
+.della-recipe-gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:24px 0 40px;padding-bottom:12px}
+.della-recipe-gallery figure{margin:0;flex:0 0 min(48%,480px);scroll-snap-align:start;min-width:0}
+.della-recipe-gallery img{display:block;width:100%;height:280px;object-fit:contain;background:#fff8e7;border-radius:12px}
+.della-recipe-layout{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.5fr);gap:56px;align-items:start}
+.della-recipe-layout section{min-width:0;scroll-margin-top:32px}
+.della-recipe-layout h2{font-size:32px;line-height:1.2;margin:0 0 24px}
+.della-recipe-ingredients{background:#f1e4c8;padding:28px;border-radius:12px}
+.della-recipe-ingredients ul{padding-left:22px;margin:0}
+.della-recipe-ingredients li{padding:10px 0;border-bottom:1px solid rgb(34 31 32 / 16%)}
+.della-recipe-ingredients li:last-child{border-bottom:0}
+.della-recipe-step{padding:0 0 24px;margin:0 0 24px;border-bottom:1px solid rgb(34 31 32 / 20%)}
+.della-recipe-step h3{font:700 22px/1.35 Arial,Helvetica,sans-serif;margin:0 0 12px}
+.della-recipe-step ul,.della-recipe-step ol{margin:0;padding-left:24px}
+.della-recipe-step li{margin:0 0 12px}
+.della-recipe-layout p{margin:0 0 16px}
+.della-recipe-layout h4{font:700 18px/1.4 Arial,Helvetica,sans-serif;margin:24px 0 12px}
+@media(max-width:749px){.della-recipe-page>header{padding-top:32px}.della-recipe-layout{grid-template-columns:1fr;gap:36px}.della-recipe-ingredients{padding:24px}.della-recipe-gallery figure{flex-basis:85%}.della-recipe-gallery img{height:220px}.della-recipe-layout h2{font-size:28px}.della-recipe-jumps a{padding:10px 20px}.della-recipe-gallery{margin-bottom:28px}}
+@media print{.della-recipe-gallery,.della-recipe-jumps,.della-recipe-page .article-template__social-sharing{display:none}.della-recipe-layout{display:block}.della-recipe-ingredients{background:none;padding:0}.della-recipe-step{break-inside:avoid}}

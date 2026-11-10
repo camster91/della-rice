@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "heading": {
       "type": "della-page-hero",
       "settings": {
         "eyebrow": "Contact us",
-        "heading": "We\u2019d love to hear from you.",
+        "heading": "We’d love to hear from you.",
         "text": "Start with a quick answer below, or send a note to our team in Brinkley."
       }
     },
@@ -16,14 +25,14 @@
           "type": "faq",
           "settings": {
             "question": "Where can I buy Della Rice?",
-            "answer": "<p>Browse every variety in our <a href=\"/collections/all\">online store</a>, explore <a href=\"/pages/wholesale\">wholesale ordering</a> for your business, or ask about nearby retailers on our <a href=\"/pages/where-to-buy\">Where to Buy page</a>.</p>"
+            "answer": "<p>Order Della Rice directly from our <a href=\"/collections/all\">online store</a>, or explore <a href=\"/pages/wholesale\">wholesale ordering</a> for your business.</p>"
           }
         },
         "b1": {
           "type": "faq",
           "settings": {
-            "question": "Is Della Rice gluten-free?",
-            "answer": "<p>Rice is naturally gluten-free. Check the current product packaging for ingredient and allergen information.</p>"
+            "question": "What about gluten and other allergens?",
+            "answer": "<p>Rice is naturally gluten-free. Check your current product packaging for ingredients and allergen information. For a product-specific allergen question, email <a href=\"mailto:info@dellarice.com\">info@dellarice.com</a>.</p>"
           }
         },
         "b2": {
@@ -32,12 +41,36 @@
             "question": "How long does it take to cook?",
             "answer": "<p>Most Della varieties are ready in about 20 minutes. Follow the package directions for the best results.</p>"
           }
+        },
+        "storage": {
+          "type": "faq",
+          "settings": {
+            "question": "How should I store uncooked rice?",
+            "answer": "<p>Keep uncooked rice in a tightly sealed, freezer-safe container in the freezer. Follow any storage instructions on your product packaging.</p>"
+          }
+        },
+        "method": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a rice cooker or another appliance?",
+            "answer": "<p>For stovetop cooking, follow the package directions. If you use another appliance, follow its manufacturer’s directions for the water amount, heat setting and cooking time.</p>"
+          }
+        },
+        "organic": {
+          "type": "faq",
+          "settings": {
+            "question": "Organic product tip",
+            "answer": "<p>Store uncooked organic rice in a tightly sealed, freezer-safe container in the freezer to help prevent pantry insects.</p>"
+          }
         }
       },
       "block_order": [
         "b0",
         "b1",
-        "b2"
+        "b2",
+        "storage",
+        "method",
+        "organic"
       ]
     }
   },

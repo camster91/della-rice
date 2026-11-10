@@ -1,11 +1,51 @@
-<div class="della-announcement">{{ section.settings.announcement | escape }}</div>
+{% if section.settings.announcement != blank %}
+<div class="della-announcement della-announcement--scrolling" id="DellaAnnouncement-{{ section.id }}">
+  <span class="visually-hidden">{{ section.settings.announcement | escape }}</span>
+  <div class="della-announcement__viewport" aria-hidden="true"><div class="della-announcement__track">
+    {% for copy in (1..2) %}<div class="della-announcement__group">{% for repeat in (1..8) %}<span>{{ section.settings.announcement | escape }}</span>{% endfor %}</div>{% endfor %}
+  </div></div>
+  <button type="button" class="della-announcement__pause" aria-pressed="false" aria-label="Pause scrolling banner">Pause</button>
+</div>
+<style>
+  .della-announcement--scrolling { display: flex; align-items: center; min-height: 68px; box-sizing: border-box; padding: 12px 16px; gap: 16px; font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; letter-spacing: .08em; }
+  .della-announcement__viewport { flex: 1; min-width: 0; overflow: hidden; }
+  .della-announcement__track { display: flex; width: max-content; animation: della-announcement-scroll 48s linear infinite; }
+  .della-announcement__group { display: flex; align-items: center; justify-content: space-around; flex: 0 0 auto; min-width: 100vw; }
+  .della-announcement__group span { padding: 0 32px; white-space: nowrap; }
+  .della-announcement__pause { flex: 0 0 auto; background: transparent; color: inherit; border: 1px solid currentColor; border-radius: 4px; padding: 5px 9px; font: inherit; font-size: 14px; min-height: 44px; cursor: pointer; }
+  .della-announcement__pause:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .della-announcement--paused .della-announcement__track, .della-announcement--scrolling:hover .della-announcement__track, .della-announcement--scrolling:focus-within .della-announcement__track { animation-play-state: paused; }
+  .della-header .della-nav > a, .della-header .della-nav > details > summary { font-size: 16px; }
+  @keyframes della-announcement-scroll { to { transform: translateX(-50%); } }
+  @media (max-width: 749px) { .della-announcement--scrolling { font-size: 22px; min-height: 60px; padding: 8px 12px; gap: 12px; } }
+  @media (prefers-reduced-motion: reduce) {
+    .della-announcement__track { animation: none; width: auto; justify-content: center; }
+    .della-announcement__group { min-width: 0; }
+    .della-announcement__group + .della-announcement__group, .della-announcement__group span + span, .della-announcement__pause { display: none; }
+  }
+</style>
+<script>
+(function () {
+  var banner = document.getElementById('DellaAnnouncement-{{ section.id }}');
+  if (!banner) return;
+  var button = banner.querySelector('.della-announcement__pause');
+  button.addEventListener('click', function () {
+    var paused = banner.classList.toggle('della-announcement--paused');
+    button.setAttribute('aria-pressed', String(paused));
+    button.setAttribute('aria-label', paused ? 'Resume scrolling banner' : 'Pause scrolling banner');
+    button.textContent = paused ? 'Resume' : 'Pause';
+  });
+})();
+</script>
+{% endif %}
+<div class="della-online-ordering" style="text-align:center;padding:10px 20px;font:500 17px/1.5 Arial,Helvetica,sans-serif;background:var(--della-cream,#fff8e7);color:var(--della-ink,#221f20)"><a href="{{ routes.all_products_collection_url }}" style="color:inherit;text-underline-offset:3px">Order Della Rice online for direct shipping →</a></div>
 <header class="della-header">
   <a class="della-logo" href="{{ routes.root_url }}" aria-label="Della Rice home">
     {% if section.settings.logo != blank %}{{ section.settings.logo | image_url: width: 284 | image_tag: width: 142, loading: 'eager', alt: 'Della — The Nicest Rice' }}{% else %}{% render 'della-image', key: 'home-imgImageDellaTheNicestRice', alt: 'Della — The Nicest Rice', eager: true %}{% endif %}
   </a>
   <nav class="della-nav" aria-label="Main navigation">
     {% if section.settings.menu != blank %}
-      {% for link in section.settings.menu.links %}
+      {% for link in section.settings.menu.links %}{% if section.settings.show_recipes == false and link.url contains '/blogs/recipes' %}{% continue %}{% endif %}
         {% if link.links.size > 0 %}<details class="della-dropdown"><summary>{{ link.title | escape }}</summary><div class="della-submenu"><a href="{{ link.url }}">{{ link.title | escape }}</a>{% for child in link.links %}<a href="{{ child.url }}"{% if child.current %} aria-current="page"{% endif %}>{{ child.title | escape }}</a>{% endfor %}</div></details>
         {% else %}<a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>{% endif %}
       {% endfor %}
@@ -14,13 +54,13 @@
       <a href="{{ pages['about'].url | default: '/pages/about' }}">About us</a>
       <a href="{{ pages['where-to-buy'].url | default: '/pages/where-to-buy' }}">Where to buy</a>
       <a href="{{ pages['wholesale'].url | default: '/pages/wholesale' }}">Wholesale</a>
-      {% if blogs.recipes.articles_count > 0 %}<a href="{{ blogs.recipes.url }}">Recipes</a>{% endif %}
+      {% if section.settings.show_recipes and blogs.recipes.articles_count > 0 %}<a href="{{ blogs.recipes.url }}">Recipes</a>{% endif %}
       <a href="{{ pages['contact'].url | default: '/pages/contact' }}">Contact</a>
     {% endif %}
   </nav>
   <div class="della-header-actions"><a href="{{ routes.search_url }}" aria-label="Search the store" class="della-search-link">Search</a><a href="{{ routes.cart_url }}" id="cart-icon-bubble" class="della-bag" aria-label="Bag, {{ cart.item_count }} items">{% render 'della-image', key: 'home-imgImage', alt: '', eager: true %}<span>Bag ({{ cart.item_count }})</span></a></div>
-  <details class="della-mobile-nav"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="{{ routes.all_products_collection_url }}">Shop all rice</a><a href="/pages/about">About us</a><a href="/pages/where-to-buy">Where to buy</a><a href="/pages/wholesale">Wholesale</a>{% if blogs.recipes.articles_count > 0 %}<a href="{{ blogs.recipes.url }}">Recipes</a>{% endif %}<a href="/pages/contact">Contact us</a><a href="{{ routes.search_url }}">Search</a></nav></details>
+  <details class="della-mobile-nav"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="{{ routes.all_products_collection_url }}">Shop all rice</a><a href="/pages/about">About us</a><a href="/pages/where-to-buy">Where to buy</a><a href="/pages/wholesale">Wholesale</a>{% if section.settings.show_recipes and blogs.recipes.articles_count > 0 %}<a href="{{ blogs.recipes.url }}">Recipes</a>{% endif %}<a href="/pages/contact">Contact us</a><a href="{{ routes.search_url }}">Search</a></nav></details>
 </header>
 {% schema %}
-{"name":"Della header","settings":[{"type":"text","id":"announcement","label":"Announcement","default":"The People’s Rice · Family-owned since 1986 · Ready in 20 minutes"},{"type":"image_picker","id":"logo","label":"Logo"},{"type":"link_list","id":"menu","label":"Main menu"}]}
+{"name":"Della header","settings":[{"type":"checkbox","id":"show_recipes","label":"Show recipes in navigation","info":"Enable after recipe imagery and products are approved.","default":false},{"type":"text","id":"announcement","label":"Announcement","default":"The People’s Rice · Family-owned since 1986 · Ready in 20 minutes"},{"type":"image_picker","id":"logo","label":"Logo"},{"type":"link_list","id":"menu","label":"Main menu"}]}
 {% endschema %}

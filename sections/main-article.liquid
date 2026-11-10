@@ -1,6 +1,10 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-<article class="article-template">
+{% if blog.handle == 'recipes' %}
+  {{ 'della-recipe.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'della-recipe.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+<article class="article-template{% if blog.handle == 'recipes' %} della-recipe-page{% endif %}">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -68,7 +72,21 @@
           class="article-template__content page-width page-width--narrow rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {{ block.shopify_attributes }}
         >
-          {{ article.content }}
+          {%- comment -%}Omit legacy recipe video-link paragraphs in this theme; stored articles remain unchanged.{%- endcomment -%}
+          {%- assign recipe_content = article.content -%}
+          {%- if blog.handle == 'recipes' -%}
+            {%- assign recipe_paragraphs = article.content | split: '<p>' -%}
+            {%- for paragraph in recipe_paragraphs -%}
+              {%- assign first_paragraph = paragraph | split: '</p>' | first -%}
+              {%- if first_paragraph contains '>Watch the recipe video</a>' and first_paragraph contains 'href="https://youtu.be/' -%}
+                {%- capture legacy_video_paragraph -%}<p>{{ first_paragraph }}</p>{%- endcapture -%}
+                {%- assign recipe_content = recipe_content | replace: legacy_video_paragraph, '' -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+          {% if blog.handle == 'recipes' %}<div data-della-recipe>{% endif %}
+          {{ recipe_content }}
+          {% if blog.handle == 'recipes' %}</div>{% endif %}
         </div>
 
       {%- when 'share' -%}

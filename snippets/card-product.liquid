@@ -292,6 +292,7 @@
               {%- endif -%}
             </div>
           </div>
+          {% unless quick_add == 'standard' or quick_add == 'bulk' or page.handle contains 'wholesale' or template.suffix contains 'wholesale' %}{% render 'della-quick-add', quick_product: card_product, section_id: section_id, context: 'dawn-card' %}{% endunless %}
           {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
           {% if quick_add == 'standard' %}
             <div class="quick-add no-js-hidden">

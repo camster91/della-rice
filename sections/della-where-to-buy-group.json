@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "heading": {
@@ -5,7 +14,7 @@
       "settings": {
         "eyebrow": "Where to buy",
         "heading": "Della rice, your way.",
-        "text": "Choose the path that fits your needs and we\u2019ll point you in the right direction."
+        "text": "Choose the path that fits your needs and we’ll point you in the right direction."
       }
     },
     "paths": {
@@ -16,10 +25,10 @@
           "type": "path",
           "settings": {
             "label": "Retail",
-            "heading": "Find Della near you",
-            "text": "Find grocery and online retail options.",
-            "button": "Explore retail",
-            "url": "#store-finder",
+            "heading": "Order Della online",
+            "text": "Shop current rice varieties directly from our online store.",
+            "button": "Shop Della Rice",
+            "url": "/collections/all",
             "tone": "cream"
           }
         },
@@ -66,7 +75,9 @@
     },
     "retail": {
       "type": "della-retail",
-      "settings": {}
+      "settings": {
+        "heading": "Shop Della Rice online"
+      }
     }
   },
   "order": [

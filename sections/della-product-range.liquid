@@ -1,0 +1,55 @@
+{%- liquid
+  assign range_collection = section.settings.collection
+  if range_collection == blank
+    assign range_collection = collections.all
+  endif
+  assign grain_key = product.handle | remove_first: 'organic-'
+  if grain_key contains 'basmati-light-brown'
+    assign grain_key = 'basmati-light-brown'
+  elsif grain_key contains 'basmati-white'
+    assign grain_key = 'basmati-white'
+  elsif grain_key contains 'jasmine-white'
+    assign grain_key = 'jasmine-white'
+  elsif grain_key contains 'long-grain-white'
+    assign grain_key = 'long-grain-white'
+  elsif grain_key contains 'long-grain-light-brown'
+    assign grain_key = 'long-grain-light-brown'
+  endif
+  assign range_count = 0
+  assign range_ids = '|'
+-%}
+{%- capture range_cards -%}
+  {% for candidate in range_collection.products %}{% if candidate.id != product.id and candidate.handle contains grain_key %}{% capture range_token %}|{{ candidate.id }}|{% endcapture %}{% assign range_ids = range_ids | append: range_token %}{% render 'della-range-card', range_product: candidate, section_id: section.id %}{% assign range_count = range_count | plus: 1 %}{% if range_count >= section.settings.limit %}{% break %}{% endif %}{% endif %}{% endfor %}
+  {% if range_count < section.settings.limit %}{% for candidate in range_collection.products %}{% capture range_token %}|{{ candidate.id }}|{% endcapture %}{% unless candidate.id == product.id or range_ids contains range_token %}{% render 'della-range-card', range_product: candidate, section_id: section.id %}{% assign range_count = range_count | plus: 1 %}{% if range_count >= section.settings.limit %}{% break %}{% endif %}{% endunless %}{% endfor %}{% endif %}
+{%- endcapture -%}
+{% if range_count > 0 %}
+<section class="della-product-range" aria-labelledby="RangeHeading-{{ section.id }}">
+  <div class="della-range-heading"><div><p class="della-eyebrow">Find your favourites</p><h2 id="RangeHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2></div><a href="{{ routes.all_products_collection_url }}">Shop all rice →</a></div>
+  <nav class="della-range-lines" aria-label="Browse rice lines"><a href="{{ routes.all_products_collection_url }}#all-natural">All Natural →</a><a href="{{ routes.all_products_collection_url }}#organic">Organic →</a><a href="{{ routes.all_products_collection_url }}#regenerative">Regenerative →</a></nav>
+  <div class="della-range-grid">{{ range_cards }}</div>
+</section>
+{% style %}
+  #shopify-section-{{ section.id }} .della-product-range{padding:clamp(40px,6vw,84px) max(24px,calc((100vw - 1200px)/2));background:var(--della-green);color:var(--della-cream)}
+  #shopify-section-{{ section.id }} .della-range-heading{display:flex;justify-content:space-between;align-items:end;gap:24px}
+  #shopify-section-{{ section.id }} h2{font-size:clamp(30px,3.2vw,48px);line-height:1.12;margin:12px 0 0}
+  #shopify-section-{{ section.id }} .della-range-heading>a{white-space:nowrap;text-underline-offset:5px;padding-bottom:5px}
+  #shopify-section-{{ section.id }} .della-range-lines{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 36px}
+  #shopify-section-{{ section.id }} .della-range-lines a{font:500 16px/1.4 Arial,Helvetica,sans-serif;border:1px solid currentColor;border-radius:24px;padding:10px 16px;text-decoration:none}
+  #shopify-section-{{ section.id }} .della-range-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+  #shopify-section-{{ section.id }} .della-range-card{display:flex;flex-direction:column;min-width:0}
+  #shopify-section-{{ section.id }} .della-range-image{display:flex;align-items:center;justify-content:center;aspect-ratio:1;background:var(--della-tan);border-radius:48% 48% 8px 8px;overflow:hidden;padding:22px}
+  #shopify-section-{{ section.id }} .della-range-image img,#shopify-section-{{ section.id }} .della-range-image svg{width:100%;height:100%;object-fit:contain}
+  #shopify-section-{{ section.id }} .della-range-meta{padding:20px 0 0;flex:1}
+  #shopify-section-{{ section.id }} .della-range-meta .della-eyebrow{font-size:13px}
+  #shopify-section-{{ section.id }} h3{font:600 20px/1.35 Arial,Helvetica,sans-serif;text-transform:none;letter-spacing:0;margin:8px 0 12px;overflow-wrap:anywhere}
+  #shopify-section-{{ section.id }} h3 a{text-decoration:none}
+  #shopify-section-{{ section.id }} .della-range-price{font:500 18px/1.5 Arial,Helvetica,sans-serif;margin:0 0 20px}
+  #shopify-section-{{ section.id }} .della-range-card .della-button{width:100%;min-height:46px;box-sizing:border-box;justify-content:center;text-align:center;background:var(--della-cream);color:var(--della-ink);border:1px solid var(--della-cream);font:600 16px/1.4 Arial,Helvetica,sans-serif;cursor:pointer}
+  #shopify-section-{{ section.id }} .della-range-card .della-button:disabled{opacity:.55;cursor:not-allowed}
+  @media(min-width:750px) and (max-width:989px){#shopify-section-{{ section.id }} .della-range-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:749px){#shopify-section-{{ section.id }} .della-range-heading{display:block}#shopify-section-{{ section.id }} .della-range-heading>a{display:inline-block;margin-top:20px}#shopify-section-{{ section.id }} .della-range-grid{grid-template-columns:1fr;gap:36px}#shopify-section-{{ section.id }} .della-range-image{max-height:310px}#shopify-section-{{ section.id }} .della-range-meta{padding-top:16px}}
+{% endstyle %}
+{% endif %}
+{% schema %}
+{"name":"Della explore rice range","settings":[{"type":"text","id":"heading","label":"Heading","default":"More nice rice."},{"type":"collection","id":"collection","label":"Product collection"},{"type":"range","id":"limit","label":"Products to show","min":2,"max":6,"step":1,"default":4}],"presets":[{"name":"Della explore rice range"}]}
+{% endschema %}

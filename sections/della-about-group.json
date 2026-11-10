@@ -13,7 +13,7 @@
       "type": "della-page-hero",
       "settings": {
         "eyebrow": "About Della",
-        "heading": "Crafting better rice since 1986.",
+        "heading": "Crafting Aromatic Rice Since 1986",
         "text": "A family-owned Arkansas company rooted in warm hospitality, thoughtful sourcing, and the people behind every grain.",
         "tone": "blue"
       }
@@ -43,7 +43,7 @@
         "anchor": "meet-the-team",
         "eyebrow": "Meet the team",
         "heading": "The people behind the grain.",
-        "text": "<p><strong>Stephen & Micah Hilsdon — Owner & Operator</strong></p><p>Specialty Rice Inc. is still a family-owned business, run by Stephen and Micah Hilsdon of Brinkley, Arkansas. They both are from this town and have been in the rice industry and the community their whole lives.</p><p>When the opportunity arose to purchase the company, their decision was driven by one clear purpose: protect local jobs and keep the business rooted in Brinkley. The employees of Specialty Rice are more than coworkers, they are friends, neighbours, and extended family.</p><p><strong>Tammy Roberts — Quality Assurance Manager</strong></p>",
+        "text": "<p><strong>Stephen & Micah Hilsdon — Owner & Operator</strong></p><p>Specialty Rice Inc. is still a family-owned business, run by Stephen and Micah Hilsdon of Brinkley, Arkansas. They both are from this town and have been in the rice industry and the community their whole lives.</p><p>When the opportunity arose to purchase the company, their decision was driven by one clear purpose: protect local jobs and keep the business rooted in Brinkley. The employees of Specialty Rice are more than coworkers, they are friends, neighbours, and extended family.</p><p><strong>Tammy Roberts — Office Manager</strong></p><p><strong>Kiana — Quality</strong></p>",
         "asset_key": "13-2-imgImageDellaLeadershipStandingInARiceField",
         "image_alt": "Della leadership standing in a rice field",
         "reverse": true,
@@ -65,7 +65,38 @@
         "tone": "cream",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "blocks": {
+        "photo0": {
+          "type": "community_photo",
+          "settings": {
+            "image": "shopify://shop_images/della-wp-579c71b3-image-47.png",
+            "alt": "Two people standing together in a field",
+            "caption": "Rooted in the land"
+          }
+        },
+        "photo1": {
+          "type": "community_photo",
+          "settings": {
+            "image": "shopify://shop_images/della-wp-41c259c0-image-46.png",
+            "alt": "Two people seated together indoors",
+            "caption": "Time together"
+          }
+        },
+        "photo2": {
+          "type": "community_photo",
+          "settings": {
+            "image": "shopify://shop_images/della-wp-956f65f9-image-45.png",
+            "alt": "Two people standing outdoors beside a tree with a dog",
+            "caption": "Life outdoors"
+          }
+        }
+      },
+      "block_order": [
+        "photo0",
+        "photo1",
+        "photo2"
+      ]
     },
     "promise": {
       "type": "della-cta",
@@ -94,9 +125,10 @@
         "eyebrow": "Our promise to you",
         "heading": "Find the nicest rice for you.",
         "text": "",
-        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free &amp; Allergen-Free</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>",
-        "tone": "yellow",
-        "inline": false
+        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free</li><li>Allergen information: check the current product label and email <a href=\"mailto:info@dellarice.com\">info@dellarice.com</a> with specific questions.</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>",
+        "tone": "green",
+        "inline": false,
+        "show_brand_graphics": true
       }
     }
   },
