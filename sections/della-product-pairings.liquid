@@ -1,0 +1,28 @@
+{%- assign pairing_marker = 'Pairs Well With:' -%}
+{%- if product.description contains pairing_marker -%}
+  {%- assign pairings = product.description | split: pairing_marker | last | strip_html | strip | split: ',' -%}
+  <section class="della-product-pairings" aria-labelledby="PairingsHeading-{{ section.id }}">
+    <div class="della-pairings-intro">
+      <p class="della-eyebrow">At your table</p>
+      <h2 id="PairingsHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+      <p>{{ section.settings.text | escape }}</p>
+    </div>
+    <ul class="della-pairings-list" role="list">
+      {% for pairing in pairings %}{% assign pairing_text = pairing | strip %}{% if pairing_text != blank %}<li><span aria-hidden="true">0{{ forloop.index }}</span><h3>{{ pairing_text | escape }}</h3></li>{% endif %}{% endfor %}
+    </ul>
+  </section>
+  {% style %}
+    #shopify-section-{{ section.id }} .della-product-pairings{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,100px);padding:clamp(40px,6vw,84px) max(24px,calc((100vw - 1200px)/2));background:var(--della-tan);color:var(--della-ink)}
+    #shopify-section-{{ section.id }} h2{font-size:clamp(30px,3.2vw,48px);line-height:1.12;margin:12px 0 20px;max-width:15ch}
+    #shopify-section-{{ section.id }} .della-pairings-intro>p:last-child{font:400 18px/1.65 Arial,Helvetica,sans-serif;max-width:42ch;margin:0}
+    #shopify-section-{{ section.id }} .della-pairings-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px;align-content:center}
+    #shopify-section-{{ section.id }} li{border-top:1px solid var(--della-rule);padding:18px 0 24px;min-width:0}
+    #shopify-section-{{ section.id }} li:only-child{grid-column:1/-1}
+    #shopify-section-{{ section.id }} li span{font-size:12px;letter-spacing:.08em}
+    #shopify-section-{{ section.id }} h3{font:600 21px/1.35 Arial,Helvetica,sans-serif;text-transform:none;letter-spacing:0;margin:10px 0 0;overflow-wrap:anywhere}
+    @media(max-width:749px){#shopify-section-{{ section.id }} .della-product-pairings{grid-template-columns:1fr;gap:28px}#shopify-section-{{ section.id }} h3{font-size:18px}}
+  {% endstyle %}
+{%- endif -%}
+{% schema %}
+{"name":"Della serving ideas","settings":[{"type":"text","id":"heading","label":"Heading","default":"Make it your own."},{"type":"textarea","id":"text","label":"Introduction","default":"A few delicious places to start. Pair this rice with your favourites and make a meal that feels like you."}],"presets":[{"name":"Della serving ideas"}]}
+{% endschema %}

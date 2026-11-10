@@ -299,6 +299,11 @@
                                 </span>
                               </button>
                             </quantity-input>
+                            {% if item.instructions.can_update_quantity != false and item.variant.quantity_rule.min <= 1 and item.variant.quantity_rule.increment <= 1 %}
+                              <della-cart-presets hidden aria-label="Quick quantity for {{ item.product.title | escape }}">
+                                {% assign quick_cart_counts = '1,2,4' | split: ',' %}{% for quick_cart_count in quick_cart_counts %}{% assign quick_cart_number = quick_cart_count | plus: 0 %}{% if item.variant.quantity_rule.max == nil or quick_cart_number <= item.variant.quantity_rule.max %}<button type="button" data-cart-quantity="{{ quick_cart_number }}" aria-pressed="{% if item.quantity == quick_cart_number %}true{% else %}false{% endif %}" aria-label="Set {{ item.product.title | escape }} quantity to {{ quick_cart_number }}">{{ quick_cart_number }}</button>{% endif %}{% endfor %}
+                              </della-cart-presets>
+                            {% endif %}
                           </div>
                           <cart-remove-button
                             id="Remove-{{ item.index | plus: 1 }}"

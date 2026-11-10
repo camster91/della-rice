@@ -1,0 +1,30 @@
+{%- if quick_product != blank and wholesale != true -%}
+  {%- liquid
+    assign quick_variant = quick_product.selected_or_first_available_variant
+    assign quick_section_id = section_id | default: section.id | default: 'site'
+    assign quick_context = context | default: 'card' | handleize
+    assign quick_form_id = 'DellaQuickAdd-' | append: quick_section_id | append: '-' | append: quick_context | append: '-' | append: quick_product.id
+    assign quick_needs_options = false
+    unless quick_product.has_only_default_variant
+      assign quick_needs_options = true
+    endunless
+    if quick_variant.quantity_rule.min > 1 or quick_variant.quantity_rule.increment > 1
+      assign quick_needs_options = true
+    endif
+  -%}
+  <della-quick-buy class="della-quick-add"{% if request.page_type == 'cart' %} data-native{% endif %}>
+    {% if quick_product.available == false %}
+      <button class="della-button della-quick-add__button" type="button" disabled aria-label="{{ quick_product.title | escape }} is sold out">Sold out</button>
+    {% elsif quick_needs_options %}
+      <a class="della-button della-quick-add__button" href="{{ quick_product.url }}">Choose options<span class="visually-hidden"> for {{ quick_product.title | escape }}</span></a>
+    {% else %}
+      {% form 'product', quick_product, id: quick_form_id, class: 'della-quick-add__form' %}
+        <input type="hidden" name="id" value="{{ quick_variant.id }}">
+        {% if show_quantity %}<label class="della-quick-quantity" for="{{ quick_form_id }}-quantity">Quantity <select id="{{ quick_form_id }}-quantity" name="quantity">{% for quick_count in (1..3) %}{% if quick_variant.quantity_rule.max == nil or quick_count <= quick_variant.quantity_rule.max %}<option value="{{ quick_count }}">{{ quick_count }}</option>{% endif %}{% endfor %}</select></label>{% else %}<input type="hidden" name="quantity" value="1">{% endif %}
+        <button class="della-button della-quick-add__button" type="submit" name="add" aria-label="Add {{ quick_product.title | escape }} to cart">Add to cart</button>
+        {% if form.errors %}<div class="della-quick-add__error" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
+      {% endform %}
+    {% endif %}
+    <p class="della-quick-buy-status" data-quick-buy-status role="status" aria-live="polite"></p>
+  </della-quick-buy>
+{%- endif -%}

@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "heading": {
       "type": "della-page-hero",
       "settings": {
         "eyebrow": "From grain to table \u00b7 12 varieties",
-        "heading": "The People\u2019s Rice.",
+        "heading": "The Nicest Rice",
         "text": "All Natural, Organic, and Regenerative grains\u2014crafted with care and ready for every kind of table.",
         "tone": "yellow"
       }

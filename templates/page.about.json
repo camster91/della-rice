@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "heading": {
@@ -29,7 +38,7 @@
         "anchor": "meet-the-team",
         "eyebrow": "Meet the team",
         "heading": "The people behind the grain.",
-        "text": "<p><strong>Stephen &amp; Micah Hilsdon — Owner &amp; Operator</strong></p><p>Specialty Rice Inc. is still a family-owned business, run by Stephen and Micah Hilsdon of Brinkley, Arkansas. They both are from this town and have been in the rice industry and the community their whole lives.</p><p>When the opportunity arose to purchase the company, their decision was driven by one clear purpose: protect local jobs and keep the business rooted in Brinkley. The employees of Specialty Rice are more than coworkers, they are friends, neighbours, and extended family.</p><p><strong>Tammy Roberts — Office Manager - HR</strong></p>",
+        "text": "<p><strong>Stephen &amp; Micah Hilsdon — Owner &amp; Operator</strong></p><p>Specialty Rice Inc. is still a family-owned business, run by Stephen and Micah Hilsdon of Brinkley, Arkansas. They both are from this town and have been in the rice industry and the community their whole lives.</p><p>When the opportunity arose to purchase the company, their decision was driven by one clear purpose: protect local jobs and keep the business rooted in Brinkley. The employees of Specialty Rice are more than coworkers, they are friends, neighbours, and extended family.</p><p><strong>Tammy Roberts — Office Manager</strong></p><p><strong>Kiana — Quality</strong></p>",
         "asset_key": "13-2-imgImageDellaLeadershipStandingInARiceField",
         "image_alt": "Della leadership standing in a rice field",
         "reverse": true
@@ -53,8 +62,9 @@
         "anchor": "our-promise",
         "eyebrow": "Our promise to you",
         "heading": "Find the nicest rice for you.",
-        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free &amp; Allergen-Free</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>",
-        "tone": "yellow"
+        "details": "<ul><li>All-Natural Ingredients</li><li>U.S. Grown (with select imports like Italian Arborio)</li><li>Gluten-Free</li><li>Allergen information: check the current product label and email <a href=\"mailto:info@dellarice.com\">info@dellarice.com</a> with specific questions.</li><li>USDA-Certified Organic Options</li><li>Vertically Integrated for Full Transparency</li><li>Sustainable &amp; Ethical Farming Practices</li></ul>",
+        "tone": "green",
+        "show_brand_graphics": true
       },
       "blocks": {
         "b0": {

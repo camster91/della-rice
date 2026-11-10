@@ -1,0 +1,68 @@
+{%- liquid
+  assign upsell_collection = section.settings.collection
+  if upsell_collection == blank
+    assign upsell_collection = collections.all
+  endif
+  assign excluded_ids = '|'
+  assign selected_grains = '|'
+  assign upsell_count = 0
+  for line in cart.items
+    capture line_id
+      echo '|'
+      echo line.product.id
+      echo '|'
+    endcapture
+    assign excluded_ids = excluded_ids | append: line_id
+    assign line_grain = line.product.handle | remove_first: 'organic-' | remove: '-2'
+    assign selected_grains = selected_grains | append: line_grain | append: '|'
+  endfor
+  assign lines = 'All Natural|Organic|Regenerative' | split: '|'
+-%}
+{%- capture upsell_cards -%}
+  {% for rice_line in lines %}
+    {% for candidate in upsell_collection.products %}
+      {% capture candidate_id %}|{{ candidate.id }}|{% endcapture %}
+      {% assign candidate_grain = candidate.handle | remove_first: 'organic-' | remove: '-2' %}
+      {% capture grain_token %}|{{ candidate_grain }}|{% endcapture %}
+      {% if candidate.available and candidate.type == rice_line %}
+        {% unless excluded_ids contains candidate_id or selected_grains contains grain_token %}
+          {% render 'della-range-card', range_product: candidate, section_id: section.id, show_quantity: true %}
+          {% assign excluded_ids = excluded_ids | append: candidate_id %}
+          {% assign selected_grains = selected_grains | append: grain_token %}
+          {% assign upsell_count = upsell_count | plus: 1 %}
+          {% break %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if upsell_count >= section.settings.limit %}{% break %}{% endif %}
+  {% endfor %}
+  {% if upsell_count < section.settings.limit %}{% for candidate in upsell_collection.products %}{% capture candidate_id %}|{{ candidate.id }}|{% endcapture %}{% if candidate.available %}{% unless excluded_ids contains candidate_id %}{% render 'della-range-card', range_product: candidate, section_id: section.id, show_quantity: true %}{% assign excluded_ids = excluded_ids | append: candidate_id %}{% assign upsell_count = upsell_count | plus: 1 %}{% if upsell_count >= section.settings.limit %}{% break %}{% endif %}{% endunless %}{% endif %}{% endfor %}{% endif %}
+{%- endcapture -%}
+{% if upsell_count > 0 %}
+<section class="della-cart-upsells" data-della-cart-upsells aria-labelledby="CartUpsells-{{ section.id }}">
+  <div class="della-cart-upsell-heading"><div><p class="della-eyebrow">{% if cart == empty %}Find your favourites{% else %}Something different for your next meal{% endif %}</p><h2 id="CartUpsells-{{ section.id }}">{% if cart == empty %}{{ section.settings.empty_heading | escape }}{% else %}{{ section.settings.heading | escape }}{% endif %}</h2><p>Explore another grain or a different Della line.</p></div><a href="{{ routes.all_products_collection_url }}">Keep shopping →</a></div>
+  <nav class="della-cart-shop-links" aria-label="Keep shopping by rice line"><a href="{{ routes.all_products_collection_url }}#all-natural">All Natural →</a><a href="{{ routes.all_products_collection_url }}#organic">Organic →</a><a href="{{ routes.all_products_collection_url }}#regenerative">Regenerative →</a></nav>
+  <div class="della-cart-upsell-grid">{{ upsell_cards }}</div>
+</section>
+{% style %}
+  #shopify-section-{{ section.id }} .della-cart-upsells{padding:clamp(36px,5vw,64px) max(24px,calc((100vw - 1200px)/2));background:var(--della-tan);color:var(--della-ink)}
+  #shopify-section-{{ section.id }} .della-cart-upsell-heading{display:flex;justify-content:space-between;align-items:end;gap:24px}
+  #shopify-section-{{ section.id }} h2{font-size:clamp(28px,3.2vw,44px);line-height:1.15;margin:10px 0 16px}
+  #shopify-section-{{ section.id }} .della-cart-upsell-heading p:last-child{font:400 18px/1.6 Arial,Helvetica,sans-serif;margin:0}
+  #shopify-section-{{ section.id }} .della-cart-upsell-heading>a{white-space:nowrap;text-underline-offset:4px}
+  #shopify-section-{{ section.id }} .della-cart-shop-links{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 32px}
+  #shopify-section-{{ section.id }} .della-cart-shop-links a{font:500 16px/1.5 Arial,Helvetica,sans-serif;border:1px solid var(--della-rule);border-radius:24px;padding:10px 16px;text-decoration:none}
+  #shopify-section-{{ section.id }} .della-cart-upsell-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+  #shopify-section-{{ section.id }} .della-range-card{display:flex;flex-direction:column;min-width:0}
+  #shopify-section-{{ section.id }} .della-range-image{display:flex;align-items:center;justify-content:center;aspect-ratio:1.25;background:var(--della-cream);border-radius:90px 90px 8px 8px;overflow:hidden;padding:20px}
+  #shopify-section-{{ section.id }} .della-range-image img{width:100%;height:100%;object-fit:contain}
+  #shopify-section-{{ section.id }} .della-range-meta{padding-top:18px;flex:1}
+  #shopify-section-{{ section.id }} h3{font:600 20px/1.35 Arial,Helvetica,sans-serif;letter-spacing:0;text-transform:none;margin:8px 0 12px}
+  #shopify-section-{{ section.id }} h3 a{text-decoration:none}
+  #shopify-section-{{ section.id }} .della-range-price{font:500 18px/1.5 Arial,Helvetica,sans-serif;margin-bottom:12px}
+  @media(max-width:749px){#shopify-section-{{ section.id }} .della-cart-upsell-heading{display:block}#shopify-section-{{ section.id }} .della-cart-upsell-heading>a{display:inline-block;margin-top:20px}#shopify-section-{{ section.id }} .della-cart-upsell-grid{grid-template-columns:1fr;gap:36px}#shopify-section-{{ section.id }} .della-range-image{max-height:280px}}
+{% endstyle %}
+{% endif %}
+{% schema %}
+{"name":"Della cart suggestions","settings":[{"type":"text","id":"heading","label":"Cart heading","default":"Round out your pantry."},{"type":"text","id":"empty_heading","label":"Empty cart heading","default":"Your next nice meal starts here."},{"type":"collection","id":"collection","label":"Product collection"},{"type":"range","id":"limit","label":"Products to show","min":1,"max":3,"step":1,"default":3}],"presets":[{"name":"Della cart suggestions"}]}
+{% endschema %}

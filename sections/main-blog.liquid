@@ -1,3 +1,59 @@
+{% if blog.handle == 'recipes' %}
+
+<div id="RecipeDirectory-{{ section.id }}" class="recipe-directory" hidden>
+  <header class="rd-header"><p class="rd-eyebrow">Cook with Della</p><h1>Find your next rice recipe</h1><p>Browse by dish or the rice in your pantry, or search for an ingredient.</p></header>
+  <form class="rd-filters" role="search" aria-label="Find recipes">
+    <div class="rd-search"><label for="rd-q-{{ section.id }}">Search recipes or ingredients</label><input id="rd-q-{{ section.id }}" name="q" type="search" placeholder="Try risotto, shrimp or mushrooms" maxlength="100"></div>
+    <details class="rd-advanced" open><summary>Filter and sort</summary><div class="rd-selects">
+    <div><label for="rd-dish-{{ section.id }}">Dish type</label><select id="rd-dish-{{ section.id }}" name="dish"><option value="">All dishes</option></select></div>
+    <div><label for="rd-rice-{{ section.id }}">Rice in recipe</label><select id="rd-rice-{{ section.id }}" name="rice"><option value="">All rice types</option></select></div>
+    <div><label for="rd-sort-{{ section.id }}">Sort recipes</label><select id="rd-sort-{{ section.id }}" name="sort"><option value="az">Title A–Z</option><option value="za">Title Z–A</option></select></div></div></details>
+    <div class="rd-filter-actions"><button type="submit" class="della-button">Find recipes</button><button type="button" data-clear class="rd-clear">Clear filters</button></div>
+  </form>
+  <p data-result-count role="status" aria-live="polite" aria-atomic="true"></p>
+  <div class="rd-grid" data-recipes></div>
+  <div data-empty class="rd-empty" hidden><h2>No recipes found</h2><p>Try another ingredient or clear a filter to see more recipes.</p><button type="button" data-clear class="rd-clear">Clear filters</button></div>
+  <nav class="rd-pagination" aria-label="Recipe results pages"><button type="button" data-prev>← Previous</button><span data-page></span><button type="button" data-next>Next →</button></nav>
+</div>
+{% paginate blog.articles by 250 %}
+<script type="application/json" id="RecipeData-{{ section.id }}">{"total":{{ blog.articles_count | json }},"items":[{% for article in blog.articles %}{% assign recipe_index_image = blank %}{% if article.image %}{% assign recipe_index_image = article.image | image_url: width: 600 %}{% else %}{% assign recipe_image_parts = article.content | split: '<img' %}{% if recipe_image_parts.size > 1 %}{% assign recipe_image_tag = recipe_image_parts[1] | split: '>' | first %}{% if recipe_image_tag contains 'src="' %}{% assign recipe_index_image = recipe_image_tag | split: 'src="' | last | split: '"' | first %}{% endif %}{% endif %}{% endif %}{"title":{{ article.title | json | replace: '<', '\u003c' }},"handle":{{ article.handle | json }},"url":{{ article.url | json }},"body":{{ article.content | replace: '</li>', ' ' | replace: '</p>', ' ' | replace: '</h4>', ' ' | replace: '</h2>', ' ' | replace: '</h3>', ' ' | replace: '</h5>', ' ' | replace: '</div>', ' ' | strip_html | json | replace: '<', '\u003c' }},"image":{% if recipe_index_image != blank %}{{ recipe_index_image | json }}{% else %}null{% endif %},"alt":{{ article.image.alt | default: article.title | json | replace: '<', '\u003c' }}}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>
+{% endpaginate %}
+<style>
+.recipe-directory { max-width: 1280px; margin: auto; padding: 64px 24px; color: var(--della-ink); }
+.recipe-directory[hidden], .recipe-directory [hidden], [data-native-recipe-list][hidden] { display: none !important; }
+.rd-header { max-width: 780px; margin-bottom: 36px; }
+.rd-header h1 { font-size: clamp(40px, 5vw, 68px); text-transform: none; letter-spacing: 0; }
+.rd-header > p:last-child { font: 18px/1.6 Arial, Helvetica, sans-serif; }
+.rd-eyebrow { font: 700 14px/1.5 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; }
+.rd-filters { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 2.4fr); gap: 16px; background: var(--della-tan); padding: 24px; margin-bottom: 24px; border-radius: 8px; }
+.rd-filters label { display: block; font: 600 16px/1.5 Arial, Helvetica, sans-serif; margin-bottom: 8px; }
+.rd-filters input, .rd-filters select { width: 100%; min-width: 0; height: 48px; padding: 10px 12px; border: 1px solid var(--della-rule); background: var(--della-cream); color: var(--della-ink); border-radius: 4px; font: 16px/1.4 Arial, Helvetica, sans-serif; }
+.rd-advanced { display: block; }
+.rd-selects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.rd-advanced > summary { display: none; }
+.rd-filter-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.rd-clear { font: 600 16px/1.4 Arial, Helvetica, sans-serif; min-height: 44px; background: transparent; color: inherit; border: 0; text-decoration: underline; padding: 8px 0; }
+[data-result-count] { font: 16px/1.6 Arial, Helvetica, sans-serif; margin: 24px 0; }
+.rd-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 28px; }
+.rd-card { min-width: 0; border-bottom: 1px solid var(--della-rule); padding-bottom: 24px; }
+.rd-photo { display: block !important; aspect-ratio: 4 / 3; background: var(--della-tan); overflow: hidden; border-radius: 8px; margin-bottom: 18px; }
+.rd-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rd-card .rd-type { font: 700 14px/1.5 Arial, Helvetica, sans-serif; margin-bottom: 8px; }
+.rd-card h2 { font: 600 22px/1.35 Arial, Helvetica, sans-serif; text-transform: none; letter-spacing: 0; margin: 0 0 12px; }
+.rd-card h2 a { text-decoration: none; }
+.rd-card h2 a:hover { text-decoration: underline; }
+.rd-card .rd-rice { font: 16px/1.6 Arial, Helvetica, sans-serif; margin: 0; }
+.rd-pagination { display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 40px; font: 16px/1.5 Arial, Helvetica, sans-serif; }
+.rd-pagination button { min-height: 44px; padding: 10px 16px; background: transparent; color: inherit; border: 1px solid currentColor; border-radius: 4px; font: 600 16px/1.5 Arial, Helvetica, sans-serif; }
+.rd-pagination button:disabled { opacity: .4; cursor: default; }
+.rd-empty { padding: 48px 24px; background: var(--della-tan); text-align: center; }
+.rd-empty h2 { font: 600 24px/1.4 Arial, Helvetica, sans-serif; text-transform: none; }
+.rd-empty p { font: 16px/1.6 Arial, Helvetica, sans-serif; }
+@media(max-width: 950px) { .rd-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); } .rd-search, .rd-advanced { grid-column: 1 / -1; } .rd-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media(max-width: 600px) { .rd-advanced { display: block; } .rd-advanced > summary { display: list-item; cursor: pointer; min-height: 44px; padding: 10px 0; font: 600 16px/1.5 Arial, sans-serif; } .rd-advanced[open] > summary { margin-bottom: 16px; } .rd-selects { display: grid; grid-template-columns: 1fr; gap: 16px; } .recipe-directory { padding: 40px 24px; } .rd-filters { grid-template-columns: 1fr; padding: 20px; } .rd-grid { grid-template-columns: 1fr; gap: 28px; } .rd-pagination { gap: 12px; } .rd-pagination button { padding-inline: 12px; } }
+</style>
+
+<div id="NativeRecipeList-{{ section.id }}" data-native-recipe-list>
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
@@ -80,6 +136,195 @@
   </div>
 {%- endpaginate -%}
 
+
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('RecipeDirectory-{{ section.id }}');
+  var fallback = document.getElementById('NativeRecipeList-{{ section.id }}');
+  if (!root || root.dataset.ready) return;
+  try {
+    var data = JSON.parse(document.getElementById('RecipeData-{{ section.id }}').textContent);
+    if (!Array.isArray(data.items) || data.items.length < data.total) return;
+    var decode = function (value) { var text = document.createElement('textarea'); text.innerHTML = value || ''; return text.value.replace(/\s+/g, ' ').trim(); };
+    var sides = new Set(['basmati-mushroom-rice','brown-rice-crab-cakes','caribbean-rice-beans','lemon-herb-rice-stuffed-tomatoes','louisiana-cajun-rice','mediterranean-lemon-garlic-rice','one-pot-tomato-and-cannellini-herb-basmati-rice']);
+    function dishFor(recipe) {
+      var title = recipe.title.toLowerCase();
+      if (/pudding|pops\b/.test(title)) return 'Desserts';
+      if (title.includes('risotto')) return 'Risotto';
+      if (/soup|stew|chowder|congee|\bchili(?:\s+with|\s*$)/.test(title)) return 'Soups & stews';
+      if (/salad|bowl/.test(title)) return 'Bowls & salads';
+      if (sides.has(recipe.handle)) return 'Rice sides & snacks';
+      if (/fried rice|stir[ -]?fr(?:y|ied)/.test(title)) return 'Fried rice & stir-fries';
+      if (/one[ -]?pot|skillet|casserole|instant\s?pot|slow cooker/.test(title)) return 'One-pot & skillet';
+      return 'Mains with rice';
+    }
+    function riceFor(recipe) {
+      var text = recipe.body.split(/\bINGREDIENTS\b/i);
+      if (text.length < 2) return 'Other rice';
+      var ingredients = text.slice(1).join(' ').split(/\b(?:Step\s*1|Instructions|Directions)\b/i)[0].toLowerCase();
+      if (ingredients.includes('wild rice')) return 'Wild rice blends';
+      if (ingredients.includes('quinoa')) return 'Rice & quinoa blends';
+      if (ingredients.includes('arborio')) return 'Arborio';
+      if (/brown\s+basmati|basmati\s+(?:light\s+)?brown/.test(ingredients)) return 'Brown basmati';
+      if (/(?:light\s+)?brown rice/.test(ingredients)) return 'Brown rice';
+      if (ingredients.includes('jasmine')) return 'Jasmine';
+      if (ingredients.includes('basmati')) return 'Basmati';
+      return 'Other rice';
+    }
+    var titleGroups = new Map();
+    data.items.forEach(function (recipe) {
+      recipe.handle = recipe.handle.split('/').pop();
+      recipe.body = decode(recipe.body);
+      var key = recipe.title.toLowerCase().trim();
+      var existing = titleGroups.get(key);
+      if (!existing || recipe.handle.length < existing.handle.length || (recipe.handle.length === existing.handle.length && recipe.handle < existing.handle)) titleGroups.set(key, recipe);
+    });
+    var recipes = Array.from(titleGroups.values()).map(function (recipe) {
+      recipe.dish = dishFor(recipe); recipe.rice = riceFor(recipe);
+      recipe.search = (recipe.title + ' ' + recipe.body).normalize('NFKC').toLowerCase();
+      return recipe;
+    });
+    var form = root.querySelector('form');
+    var advanced = form.querySelector('.rd-advanced');
+    var wideScreen = matchMedia('(min-width: 601px)');
+    advanced.open = wideScreen.matches;
+    wideScreen.addEventListener('change', function (event) { advanced.open = event.matches; });
+    var search = form.elements.q, dish = form.elements.dish, rice = form.elements.rice, sort = form.elements.sort;
+    var grid = root.querySelector('[data-recipes]'), count = root.querySelector('[data-result-count]');
+    var empty = root.querySelector('[data-empty]'), pagination = root.querySelector('.rd-pagination');
+    var previous = root.querySelector('[data-prev]'), next = root.querySelector('[data-next]'), pageLabel = root.querySelector('[data-page]');
+    function options(select, key) { Array.from(new Set(recipes.map(function (r) { return r[key]; }))).sort().forEach(function (value) { var option = document.createElement('option'); option.value = value; option.textContent = value; select.append(option); }); }
+    options(dish, 'dish'); options(rice, 'rice');
+    var parameters = new URL(location.href).searchParams;
+    search.value = (parameters.get('q') || '').slice(0,100);
+    if (Array.from(dish.options).some(function (o) { return o.value === parameters.get('dish'); })) dish.value = parameters.get('dish');
+    if (Array.from(rice.options).some(function (o) { return o.value === parameters.get('rice'); })) rice.value = parameters.get('rice');
+    sort.value = parameters.get('sort') === 'za' ? 'za' : 'az';
+    var page = Math.max(1, parseInt(parameters.get('recipe_page'), 10) || 1), pageSize = 12;
+    function element(tag, className, text) { var node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node; }
+    function syncURL() {
+      var url = new URL(location.href); url.searchParams.delete('page');
+      [['q', search.value.trim()], ['dish', dish.value], ['rice', rice.value], ['sort', sort.value === 'za' ? 'za' : ''], ['recipe_page', page > 1 ? String(page) : '']].forEach(function (pair) { if (pair[1]) url.searchParams.set(pair[0], pair[1]); else url.searchParams.delete(pair[0]); });
+      history.replaceState(null, '', url);
+    }
+    function render() {
+      var words = search.value.normalize('NFKC').toLowerCase().trim().split(/\s+/).filter(Boolean);
+      var matches = recipes.filter(function (recipe) { return (!dish.value || recipe.dish === dish.value) && (!rice.value || recipe.rice === rice.value) && words.every(function (word) { return recipe.search.includes(word); }); });
+      matches.sort(function (a,b) { return a.title.localeCompare(b.title) * (sort.value === 'za' ? -1 : 1); });
+      var pages = Math.max(1, Math.ceil(matches.length / pageSize)); page = Math.min(page, pages);
+      var start = (page - 1) * pageSize;
+      var fragment = document.createDocumentFragment();
+      matches.slice(start, start + pageSize).forEach(function (recipe) {
+        var card = element('article', 'rd-card'), photo = element('div', 'rd-photo');
+        if (recipe.image) { var image = document.createElement('img'); var imageURL = new URL(recipe.image, location.origin); if (imageURL.hostname === 'cdn.shopify.com') imageURL.searchParams.set('width', '600'); image.src = imageURL.href; image.alt = recipe.alt || recipe.title; image.loading = 'lazy'; image.decoding = 'async'; image.width = 600; image.height = 450; photo.append(image); }
+        var heading = element('h2'), link = element('a', '', recipe.title); link.href = recipe.url; heading.append(link);
+        card.append(photo, element('p', 'rd-type', recipe.dish), heading, element('p', 'rd-rice', 'Rice: ' + recipe.rice)); fragment.append(card);
+      });
+      grid.replaceChildren(fragment);
+      count.textContent = matches.length ? matches.length + (matches.length === 1 ? ' recipe' : ' recipes') + ' · Showing ' + (start + 1) + '–' + Math.min(start + pageSize, matches.length) : '0 recipes';
+      empty.hidden = matches.length > 0; pagination.hidden = pages <= 1;
+      previous.disabled = page <= 1; next.disabled = page >= pages; pageLabel.textContent = 'Page ' + page + ' of ' + pages;
+      syncURL();
+    }
+    var timer;
+    form.addEventListener('submit', function (event) { event.preventDefault(); clearTimeout(timer); page = 1; render(); });
+    search.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(function () { page = 1; render(); }, 250); });
+    [dish, rice, sort].forEach(function (select) { select.addEventListener('change', function () { clearTimeout(timer); page = 1; render(); }); });
+    root.querySelectorAll('[data-clear]').forEach(function (button) { button.addEventListener('click', function () { clearTimeout(timer); form.reset(); page = 1; render(); search.focus(); }); });
+    function turnPage(step) { page += step; render(); count.tabIndex = -1; count.focus(); count.scrollIntoView({block:'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}); }
+    previous.addEventListener('click', function () { turnPage(-1); }); next.addEventListener('click', function () { turnPage(1); });
+    render(); root.dataset.ready = 'true'; root.hidden = false; fallback.hidden = true;
+  } catch (error) { console.error('Recipe directory could not initialize; native recipe browsing remains available.', error); }
+})();
+</script>
+
+{% else %}
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .recipe-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 56rem;
+    margin-bottom: 3rem;
+  }
+
+  .recipe-search .field {
+    flex: 1 1 22rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign articles_per_page = 6
+  if blog.handle == 'recipes'
+    assign articles_per_page = 12
+  endif
+-%}
+
+{%- paginate blog.articles by articles_per_page -%}
+  <div class="main-blog page-width section-{{ section.id }}-padding">
+    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ blog.title | escape }}
+    </h1>
+
+    {%- if blog.handle == 'recipes' -%}
+      <form action="{{ routes.search_url }}" method="get" role="search" class="recipe-search">
+        <input type="hidden" name="type" value="article">
+        <div class="field">
+          <input class="field__input" type="search" id="RecipeSearch-{{ section.id }}" name="q" placeholder="Search recipes" required>
+          <label class="field__label" for="RecipeSearch-{{ section.id }}">Search recipes</label>
+        </div>
+        <button class="button" type="submit">Search</button>
+      </form>
+    {%- endif -%}
+
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      {%- for article in blog.articles -%}
+        <div
+          class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {%- render 'article-card',
+            article: article,
+            media_height: section.settings.image_height,
+            media_aspect_ratio: article.image.aspect_ratio,
+            show_image: section.settings.show_image,
+            show_date: section.settings.show_date,
+            show_author: section.settings.show_author,
+            show_excerpt: true
+          -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+{%- endpaginate -%}
+
+
+{% endif %}
 {% schema %}
 {
   "name": "t:sections.main-blog.name",

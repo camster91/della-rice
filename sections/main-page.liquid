@@ -19,7 +19,31 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
+    {% assign reviewed_page_content = page.content %}
+    {% if page.handle == 'natural-facts' or page.handle == 'organic-facts' %}
+      {% comment %}Apply approved allergen guidance in this theme without editing shared page records.{% endcomment %}
+      {% assign fact_items = page.content | split: '</li>' %}
+      {% for fact_item in fact_items %}
+        {% if fact_item contains 'Allergen-Free' or fact_item contains 'Allergen &amp; Gluten-Free' %}
+          {% assign claim_text = fact_item | split: '<li>' | last %}
+          {% capture claim_markup %}<li>{{ claim_text }}</li>{% endcapture %}
+          {% capture label_guidance %}<li><strong>Gluten-Free.</strong> For allergen information, check the current product label and email <a href="mailto:info@dellarice.com">info@dellarice.com</a> with specific questions.</li>{% endcapture %}
+          {% assign reviewed_page_content = reviewed_page_content | replace: claim_markup, label_guidance %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if page.handle == 'organic-facts' %}
+      {% assign organic_paragraphs = reviewed_page_content | split: '</p>' %}
+      {% for organic_paragraph in organic_paragraphs %}
+        {% if organic_paragraph contains 'Explore our Organic Jasmine' %}
+          {% assign explore_paragraph = organic_paragraph | append: '</p>' %}
+          {% capture explore_with_storage %}{{ explore_paragraph }}<p class="della-organic-storage"><strong>Organic product tip:</strong> Store uncooked organic rice in a tightly sealed, freezer-safe container in the freezer to help prevent pantry insects.</p>{% endcapture %}
+          {% assign reviewed_page_content = reviewed_page_content | replace: explore_paragraph, explore_with_storage %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {{ reviewed_page_content }}
   </div>
 </div>
 

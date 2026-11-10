@@ -311,6 +311,7 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'della.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'della-quick-buy.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'della.js' | asset_url }}" defer="defer"></script>
     {% if settings.della_enable_motion %}
       <script src="{{ 'della-gsap.min.js' | asset_url }}" defer="defer"></script>
